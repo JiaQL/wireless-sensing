@@ -1,0 +1,36 @@
+\section {Wireless Sensing Signals}
+A wide range of wireless signals have been used in the past for various sensing tasks. Table~\ref{Tab1} summarizes what wireless signals
+have been employed in previous consumer-grade solutions.
+
+
+\renewcommand\arraystretch{2}
+\begin{table*}\scriptsize
+%\centering
+\caption{Consumer-grade wireless signals used in prior sensing tasks.}
+\label{Tab1}
+\setlength{\tabcolsep}{7mm}
+\begin{tabular}{p{0.5cm}p{0.6cm}<{\raggedright}p{0.9cm}<{\raggedright}p{1.0cm}<{\raggedright}p{0.6cm}<{\raggedright}p{1.2cm}<{\raggedright}p{0.9cm}<{\raggedright}p{0.6cm}<{\raggedright}}
+\toprule
+%\diagbox[width=5em,trim=l]{Properties}{Signal} & Wi-Fi & RFID & UWB & Asoustic & LoRa & FMCW radar & Visible Light \\
+\textbf{Properties} & \textbf{WiFi} & \textbf{RFID} & \textbf{UWB} & \textbf{Asoustic} & \textbf{LoRa} & \textbf{FMCW radar} & \textbf{Visible Light} \\
+\midrule
+\rowcolor{Gray} \textbf{Range} & 5-10m & 10m & 10m & 50cm & 15Km & 9m-120km & 1.4Km\\
+\textbf{Frequency} & 2.4GHz,5GHz & 902.75-927.25MHz & 3.1-10.6GHz & 17-24KHz & 868MHz,903-927.5MHz & 24-24.250GHz(European) & 380-790THz\\
+\rowcolor{Gray} Bandwidth & 20MHz,40Mhz & 24.5MHz & 1GHZ &  & 125KHz,250KHz,500KHz & 250MHz & \\
+\textbf{Metrics} & \CSI, \RSSI & Phase, \RSSI, Doppler & Phase, \RSSI, Amplitude & Phase, \RSSI, \CSI & Frequency, Phase, \RSSI & Frequency, Phase, \RSSI & \RSSI\\
+\rowcolor{Gray} \textbf{Cost} & Low & 902.75-927.25MHz & High & 3.1-10.6GHz & 68MHz,903-927.5MH & High & High\\
+\textbf{Modulation} & OFDM & OOK & PPM & AM,FM,PM & CSS& FMCW & OOK,CSK,VPPM\\
+\bottomrule
+\end{tabular}
+%\caption{Different wireless signals with different properties.}%\lable{Tab1}
+\end{table*}
+
+%From the Table~\ref{Tab1}, we can see that different wireless signals not only have their own unique properties, but also share the common
+%information including phase, \RSSI and frequency. These common information allow them to be applied for sensing, and their own
+%characteristics determine their own befitting sensing scenarios.
+
+\FIXME{Here we need to give an extensive discussion on the prosperities of different wireless signals.}
+
+Which signal is best for a sensing task, is the \$64,000 question. The answer is, it depends. Some wireless signals like LoRa  may provide
+a longer sensing range, but they require specialize hardware. \FIXME{Here we contrast and discuss the strengths and weakness of different
+wireless signals. }

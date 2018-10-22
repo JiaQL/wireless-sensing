@@ -1,81 +1,14 @@
 %
 \documentclass[conference]{IEEEtran}
-\ifCLASSINFOpdf
-
-\else
-\fi
-
-\hyphenation{op-tical net-works semi-conduc-tor}
-
-\usepackage[square, comma, sort&compress, numbers]{natbib}
-\usepackage{graphicx}
-\usepackage{subfigure}
-\usepackage{caption}
-\usepackage{mathrsfs}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
-\usepackage{amsthm}
-\usepackage{amsmath}
-\usepackage{graphics}
-\usepackage{epsfig}
-\usepackage{amssymb}
-\usepackage{multirow}
-\usepackage{setspace}
-\usepackage[table]{xcolor}
-\usepackage{breqn}
-\usepackage{url}
-\usepackage{caption}
-\usepackage{color}
-
-
-\newtheorem{assump}{Assumption}
-\newtheorem{axiom}{Axiom}
-\newtheorem{claim}{Claim}
-\newtheorem{conj}{Conjecture}[section]
-\newtheorem{crit}{Criterion}
-\newtheorem{theorem}{Theorem}
-\newtheorem{coro}{Corollary}[theorem]
-\newtheorem{definition}{Definition}
-\newtheorem{example}{Example}
-\newtheorem{fact}{Fact}
-\newtheorem{hypo}{Hypothesis}
-\newtheorem{lemma}{Lemma}
-\newtheorem{obsv}{Observation}[theorem]
-\newtheorem{prin}{Principle}
-\newtheorem{prob}{Problem}
-\newtheorem{ppty}{Property}
-\newtheorem{propo}{Proposition}
-\newtheorem{protocol}{Protocol}
-\newtheorem{remark}{Remark}
-\newtheorem{test}{Test}
-\newtheorem{transform}{Conversion Algorithm}
-
-\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
-\renewcommand\d{\mathop{}\!\mathrm{d}}
-\newcommand{\systemname}{WiMi}
+\input{preamble}
 
 \begin{document}
 
 %
-\title{Wireless Sensing}
+\title{Wireless Sensing: Opportunities and Challenges}
 
 
-%\author{\IEEEauthorblockN{Michael Shell}
-%\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
-%Georgia Institute of Technology\\
-%Atlanta, Georgia 30332--0250\\
-%Email: http://www.michaelshell.org/contact.html}
-%\and
-%\IEEEauthorblockN{Homer Simpson}
-%\IEEEauthorblockA{Twentieth Century Fox\\
-%Springfield, USA\\
-%Email: homer@thesimpsons.com}
-%\and
-%\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
-%\IEEEauthorblockA{Starfleet Academy\\
-%San Francisco, California 96678--2391\\
-%Telephone: (800) 555--1212\\
-%Fax: (888) 555--1212}}
+\author{}
 
 \maketitle
 
@@ -86,19 +19,14 @@
 
 \IEEEpeerreviewmaketitle
 
-\input{Introduction.tex}
-%
-\input{Wireless_for_sensing.tex}
-%%
-%%
-\input{Different-applications.tex}
-%%
-\input{Challenges.tex}
-
-\input{Outlook.tex}
-
-
-\section{CONCLUSION}\label{sec:8conc}
+\input{Introduction}
+\input{mechanism}
+\input{signals}
+\input{Wireless_for_sensing}
+\input{Different-applications}
+\input{Challenges}
+\input{Outlook}
+\input{conclusions}
 
 
 \footnotesize
@@ -106,5 +34,3 @@
 \bibliography{reference}
 
 \end{document}
-
-

@@ -1,6 +1,45 @@
 \section{Introduction}
-The development of wireless devices has resulted in numerous wireless sensing technologies which enable a variety of applications such as indoor navigation, smart homes, fitness tracking and security check. In recent years, especially non-contact wireless sensing has attracted much attention from both the research community and the industry, due to its convenience of without instrumenting user's body. Many researches have answered how to identify object's location, shape, material, behavior, etc. The basic idea of these designs is to utilize signal processing to construct a mapping pattern or theoretical relationship between the target information and the signal characteristics.
+Wireless signals, such as WiFi and the radio frequency (\RF), have emerged as a powerful medium for information sensing. By measuring how
+the wireless signal is affected by an object (e.g., the human body) or activity (e.g., a gesture), tasks like gait identification~\cite{},
+gesture recognition~\cite{}, activity recognition~\cite{}, and vital sign monitoring~\cite{} can be possible. Wireless sensing is currently
+a dynamic field looking at subjects as diverse as personalization in smart homes~\cite{} to emotion detection~\cite{}. Wireless sensing has
+the advantages of easy to be deployed as it requires as few as two wireless routers, not requiring instrumenting the user, and being less
+privacy intrusive compared to other infrastructure-based solutions like video-based solutions~\cite{}.
 
-To turn these designs into practical systems, series challenges need to be tackled. Typically, (i) the defects of cheap devices can lead to nonnegligible error of signal information~(phase), (ii) environmental changes can alter the regular signal patterns, and (iii) multi-path effect would greatly reduce the estimation resolution of some fundamental parameters for sensing. These always make the system performance extremely poor. To address these issues, many efforts has been made, including: (i) calibrating the inaccurate phase information through comparing with it with a real value obtained in advance, (ii) canceling background noise using signals from multiple links, and (iii) improving the resolution of parameter estimation by splicing bandwidth or constructing virtual array. Nowadays, with the popularity of artificial intelligence, deep learning technology is gradually integrated into signal processing to extract more complex and effective features for sensing task. This drives great success in wireless sensing applications.
 
-In the rest of this paper, we first review the state-of-arts of wireless sensing. Then we conclude the key challenges of this field and suggest promising solutions for them. Finally, we propose guiding insights into future trends.
+The history of employing wireless signals for environmental sensing can date back to the development of military radar and sonar systems
+20th century~\cite{Charles Samuel Franklin 's development of first practcial radar}. Traditionally, these systems have to rely on large
+antenna arrays to transmit high-power signals in military spectrum to track large metallic objects, like airplanes, in open spaces.
+Recently, it has been shown that consumer-grade devices such as smartphones and wireless routers can be used to track human activities in
+an indoor environment with a high accuracy. This offers a new, inexpensive way to bring activity sensing into everyday life, which opens up
+new possibility for innovative applications. While there are still many challenges, low-cost wireless sensing has moved from a research
+niche to a mainstream activity. In this article we aim to demystify wireless sensing and show it is a trustworthy and exciting research
+direction.
+
+
+
+
+\subsection{Roadmap}
+The remainder of this article is structured as follows. We first give an intuitive view for the wireless sensing working mechanism  in
+Section~\cite{{sec:mechanism}}. We then describe xx. We discuss the challenges and limitations for wireless sensings, as well as open
+research directions in Section xx before we summarise and conclude in Section \FIXME{xx}.
+
+
+%
+%The development of wireless devices has resulted in numerous wireless sensing technologies which enable a variety of applications such as
+%indoor navigation, smart homes, fitness tracking and security check. In recent years, especially non-contact wireless sensing has attracted
+%much attention from both the research community and the industry, due to its convenience of without instrumenting user's body. Many
+%researches have answered how to identify object's location, shape, material, behavior, etc. The basic idea of these designs is to utilize
+%signal processing to construct a mapping pattern or theoretical relationship between the target information and the signal characteristics.
+%
+%To turn these designs into practical systems, series challenges need to be tackled. Typically, (i) the defects of cheap devices can lead to
+%nonnegligible error of signal information~(phase), (ii) environmental changes can alter the regular signal patterns, and (iii) multi-path
+%effect would greatly reduce the estimation resolution of some fundamental parameters for sensing. These always make the system performance
+%extremely poor. To address these issues, many efforts has been made, including: (i) calibrating the inaccurate phase information through
+%comparing with it with a real value obtained in advance, (ii) canceling background noise using signals from multiple links, and (iii)
+%improving the resolution of parameter estimation by splicing bandwidth or constructing virtual array. Nowadays, with the popularity of
+%artificial intelligence, deep learning technology is gradually integrated into signal processing to extract more complex and effective
+%features for sensing task. This drives great success in wireless sensing applications.
+%
+%In the rest of this paper, we first review the state-of-arts of wireless sensing. Then we conclude the key challenges of this field and
+%suggest promising solutions for them. Finally, we propose guiding insights into future trends.

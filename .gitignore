@@ -41,3 +41,4 @@ figure/frequency_energy.vsd
 *.docx
 Main.pdf
 Main.syntax.gz
+*.aux

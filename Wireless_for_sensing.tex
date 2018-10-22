@@ -46,12 +46,12 @@ In recent years, with the emerging of the Internet of Thing (IoT), many wireless
 
 (i) \emph{Hardware imperfections.} Due to commercial hardware imperfections, we cannot obtain accurate phase information and accurate time of flight.
 
-(ii) \emph{Indoor multipath.} In our indoor environment, there exits rich  multi-path effects, which result in the inaccuracy of location parameter estimation and signal attenuation model construction.
+(ii) \emph{multi-path effect.} In our indoor environment, there exits rich  multi-path effects, which result in the inaccuracy of location parameter estimation and signal attenuation model construction.
 
 (iii) \emph{Uncertainty of initial position.} For the tracking systems, it is difficult to determine target's initial position.
 
 
- To mitigate the phase error caused by commercial hardware imperfections, a basic idea is to employ a optimization model to calibrate phase information \cite{Wang2016D}. Alternatively, we can use different frequencies to emulate a very large bandwidth for a high accuracy of time estimation~\cite{RFind}. To eliminate the indoor multi-path effect, on the one hand, we can exploit multi-path to capture multi-path profiles for target localization~\cite{PinIt}. On the other hand, by increasing the number of antennas in the array, we can improve angle estimation resolution to identify the line-of-sight~(LoS)~\cite{Arraytrack, Spotfi}. Furthermore, one skillful idea is to select clear subcarrier information to establish signal attenuation model~\cite{wang2016lifs}. To deal with the uncertainty of initial position, we can leverage virtual antenna array and approximate evaluation method to improve tracking accuracy~\cite{Tagoram}.
+ To mitigate the phase error caused by commercial hardware imperfections, a general idea is to calibrate phase information by comparing it with the real pre sampled values \cite{Wang2016D}. Meanwhile, different frequencies can be utilized to emulate a very large bandwidth for achieving accurate time estimation~\cite{RFind}. To eliminate the multi-path effect, on the one hand, we can conversely exploit multi-path to capture multi-path profiles for target localization~\cite{PinIt}. On the other hand, by increasing the number of antennas in the array, we can improve angle estimation resolution to identify the line-of-sight~(LoS)~\cite{Arraytrack, Spotfi}. Furthermore, one skillful idea is to select clear subcarrier information to establish signal attenuation model~\cite{wang2016lifs}. To deal with the uncertainty of initial position, we can leverage virtual antenna array and approximate evaluation method to improve tracking accuracy~\cite{Tagoram}.
 
 In addition, acoustic signal has been widely used for localization and tracking, due to its slow propagation velocity and robustness to environment changes. However, there also exist several challenges that are similar to Wi-Fi and RFID based localization systems.
 

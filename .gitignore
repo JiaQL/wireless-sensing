@@ -39,7 +39,5 @@ figure/frequency_energy.vsd
 *.R
 *.txt
 *.docx
-conext/Wiki_google.opj
-conext/figure/pie chart.opj
-conext/figure/performance2oracle.opj
-conext/figure/pca-2.opj
+Main.pdf
+Main.syntax.gz

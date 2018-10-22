@@ -1,0 +1,63 @@
+\section {Various sensing applications}
+
+In this section, we first introduce the properties of several signals commonly utilized for wireless sensing. Then we review and discuss the typical wireless sensing applications in recent years.
+
+\subsection {The properties of different signals}
+Nowadays, many wireless signals are employed for plentiful sensing applications, such as Wi-Fi, RFID, UWB, FMCW radar, LoRa, acoustic and visible light. The specific properties for each signal are shown in Tab~\ref{Tab1}:
+
+\renewcommand\arraystretch{2}
+\begin{table*}\tiny
+%\centering
+\caption{Different wireless signals with different properties.}
+\label{Tab1}
+\setlength{\tabcolsep}{7mm}
+\begin{tabular}{|p{0.5cm}|p{0.5cm}<{\raggedright}|p{0.9cm}<{\raggedright}|p{1.0cm}<{\raggedright}|p{0.6cm}<{\raggedright}|p{1.2cm}<{\raggedright}|p{0.9cm}<{\raggedright}|p{0.6cm}<{\raggedright}|}
+\hline
+%\diagbox[width=5em,trim=l]{Properties}{Signal} & Wi-Fi & RFID & UWB & Asoustic & LoRa & FMCW radar & Visible Light \\
+Properties & Wi-Fi & RFID & UWB & Asoustic & LoRa & FMCW radar & Visible Light \\
+\hline
+Sensing range & 5-10m & 10m & 10m & 50cm & 15Km & 9m-120km & 1.4Km\\
+\hline
+Frequency & 2.4GHz,5GHz & 902.75-927.25MHz & 3.1-10.6GHz & 17-24KHz & 868MHz,903-927.5MHz & 24-24.250GHz(European) & 380-790THz\\
+\hline
+Bandwidth & 20MHz,40Mhz & 24.5MHz & 1GHZ &  & 125KHz,250KHz,500KHz & 250MHz & \\
+\hline
+Information & CSI,RSS & Phase,RSSI,Doppler & Phase,RSSI,Amplitude & Phase,RSSI,CSI & Frequency,Phase,RSSI & Frequency,Phase,RSSI & RSSI\\
+\hline
+Cost & Low & 902.75-927.25MHz & High & 3.1-10.6GHz & 68MHz,903-927.5MH & High & High\\
+\hline
+Modulation & OFDM & OOK & PPM & AM,FM,PM & CSS& FMCW & OOK,CSK,VPPM\\
+\hline
+\end{tabular}
+%\caption{Different wireless signals with different properties.}%\lable{Tab1}
+\end{table*}
+
+From the Tab~\ref{Tab1}, we can see that different wireless signals not only have their own unique properties, but also share some common information including phase, RSSI and frequency. Hence, we can utilize these characteristics of wireless signals to perform various sensing applications.
+
+
+\subsection{Typical wireless sensing applications}
+In recent years, with the emerging of the Internet of Thing (IoT), many wireless sensing applications have been inspired, especially for localization and tracking, behavior perception, material identification, target imaging and vibration detection. In this section, we will present these five mainstream applications respectively. We also discuss the challenges coming with them and corresponding efforts have made.
+
+\textbf{Localization and Tracking:} Target localization and tracking are two most universal and significant sensing applications. Specifically, indoor localization has attracted much interest from both the industry and the research community. Among all the technologies employed for localization, Wi-Fi and RFID are considered as the most promising schemes due to the cheap price and widespread deployment. Furthermore, we can easily access the amplitude and phase information from commercial RFID and Wi-Fi devices. In the following, we will discuss previous indoor localization works, which can be classified into two categories: learning-based and model-based localization schemes.
+
+\emph{Learning-based localization:} These systems collect received signal strength~(RSS) and channel state information~(CSI) at each location to build fingerprints for localization, which can achieve a meter-level accuracy. Although these systems are easy to be deployed, their localization accuracies are susceptible to environmental change and indoor multi-path. Furthermore, learning-based localization schemes suffer from labor-intensive offline training.
+
+\emph{Model-based localization:} For a robust, higher accuracy and low cost system, more and more researches have a trend to explore model-based localization approaches, which can be divided into two categories. The first category of localization systems are based on arrival-of-angle~(AoA) or time-of-flight~(TOF) estimation, which achieve localization by intersecting multiple AoA or ToF estimates. The second category is energy-attenuation-based localization systems, which establish signal energy attenuation model to calculate target localization. These ideas sound simple, however, there exist some common challenges to make them practical.
+
+(i) \emph{Hardware imperfections.} Due to commercial hardware imperfections, we cannot obtain accurate phase information and accurate time of flight.
+
+(ii) \emph{Indoor multipath.} In our indoor environment, there exits rich  multi-path effects, which result in the inaccuracy of location parameter estimation and signal attenuation model construction.
+
+(iii) \emph{Uncertainty of initial position.} For the tracking systems, it is difficult to determine target's initial position.
+
+
+ To mitigate the phase error caused by commercial hardware imperfections, a basic idea is to employ a optimization model to calibrate phase information \cite{Wang2016D}. Alternatively, we can use different frequencies to emulate a very large bandwidth for a high accuracy of time estimation~\cite{RFind}. To eliminate the indoor multi-path effect, on the one hand, we can exploit multi-path to capture multi-path profiles for target localization~\cite{PinIt}. On the other hand, by increasing the number of antennas in the array, we can improve angle estimation resolution to identify the line-of-sight~(LoS)~\cite{Arraytrack, Spotfi}. Furthermore, one skillful idea is to select clear subcarrier information to establish signal attenuation model~\cite{wang2016lifs}. To deal with the uncertainty of initial position, we can leverage virtual antenna array and approximate evaluation method to improve tracking accuracy~\cite{Tagoram}.
+
+In addition, acoustic signal has been widely used for localization and tracking, due to its slow propagation velocity and robustness to environment changes. However, there also exist several challenges that are similar to Wi-Fi and RFID based localization systems.
+
+The first issue need to be tackled is the inaccuracy phase information and unsynchronized time induced by the defects of commercial acoustic devices. A standard solution is to use phase difference for tracking target location~\cite{LLAP}, another approach is employing multiple device to avoid the time asynchrony~\cite{BeepBeep}.  The second issue is the indoor multi-path, which results in inaccuracy of model parameters estimation. To deal with this problem, a typical intuition is to design different modulation for acoustic signal, such as frequency modulated carrier wave~(FMCW) and orthogonal frequency division multiplexing~(OFDM) \cite{CAT,STRATA}.
+%}
+
+
+
+

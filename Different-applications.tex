@@ -1,0 +1,35 @@
+\textbf{Behavior sensing:} Human behavior recognition can enable a wide variety of applications, such as heath care, fitness tracking and sleep monitoring. Specifically, human behavior recognition contains
+large movement sensing such as postures and gait, and fine-grained movement sensing such as breathing, heart beat and lip language. Similarly to localization and tracking systems, human behavior recognition interfaces can also be classified as learning-based and model-based behavior recognition two categories.
+
+\emph{Learning-based behavior recognition:} For most irregular behaviors recognition, researches depend on pattern learning (DTW, SVM, KNN and BAYES)~\cite{xx} to deal with it. To ensure the recognition accuracy of systems, we need to answer following questions.
+
+How to design a high-quality feature to remove the impacts of environmental changes and target's velocity? How to effectively label substantial data?
+
+To answer the first question, a intuitive idea is performing transfer learning to design the rubout high-quality feature~\cite{xx}. For the second question, a deep learning can be employed to effectively label substantial data~\cite{xx}.
+
+\emph{Model-based behavior recognition schemes:} These model-based behavior recognition schemes can only be applied to analyze few human behaviors with a specific frequency range, such as walking, jogging, running, breathing and heart beat. These activities can be sensed according to that they can cause signal fluctuates with specific frequencies. To make the system operate well in reality, two typical challenges need to be addressed.
+
+How to extract weak signal such as breathing and heart beat? How to eliminate the interference from the other body parts' activities?
+
+To accurately detect the weak breathing and heart beat signals, an effective solution is to amplify them by exploiting the superposition of multiple paths existing in the environment. The interference activities from other body parts can be filtered out in frequency domain.
+
+\textbf{Material identification:} Target material identification is a key role in our life, many applications would benefit from it, such as detecting concealed weapons and determining food deterioration. Existing material identification systems such as Radar, X-Ray, CT, MRI and B-scan ultrasonography use special hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Hence, there exits some challenges to identify target material with commodity device.
+
+How to eliminate the impact of target's size? How to remove the impact of containers and liquid reflections?
+
+To solve the first challenge, we can design a feature, which only depends on the material type and independent of target size, such as the ratio of RSS change and phase change \cite{Tagscan}. Consider that the liquid containers and liquid reflections have some impacts on the above feature, \cite{LiquID} employs UWB devices with high bandwidth to accurate estimate the time of signal propagation, and use it to remove the impact of containers and liquid reflections.
+
+
+\textbf{Target imaging and 3D reconstruction:} Wireless signal can reflect off or penetrate through various objects in the environment. Thus researches attempt to utilize this to achieve object imaging.
+
+\emph{Reflection-based imaging:} Due to the physics of radio reflections, at any point in time, the sensor captures signal reflection from only a subset of the human body parts. \cite{Adib2017Capturing} identifies human body parts from RF snapshots across time to capture the human figure, as the consecutive RF snapshots can expose different body parts and diverse perspectives of the same body part; However, imaging results are highly sensitive to phase accuracy. Thus~\cite{Zhu2015Reusing}  proposes a new 60Ghz imaging algorithm, which images an object using only RSS recorded along the device¡¯s trajectory, as the RSS measurements of 60Ghz are highly robust against noises in device position and trajectory tracking. [MobiSys2018 LiliQiu]  proposes a new Phase Gradient Algorithm called MPGA to remove the impact of hand jitters, compensate phase errors, MPGA can effectively support acoustic imaging in a mobile context.
+
+Occlusion is a fundamental problem in human pose estimation. Thus, \cite{Zhao_2018_CVPR}  presents a different approach that extracts pose information from the visual stream, and uses it to label the RF signals for dealing with Occlusion. To estimate the 3D skeletons, we need to use RF signals to extract full 3D skeletons of people including the head, arms, shoulders, hip, legs, etc., and apply the convolutional neural network (CNN) to 4D convolution, but common deep learning platforms (e.g., Pytorch, TensorFlow) do not support 4D CNNs. Therefore,  \cite{zhao2018rf}leverages the properties of RF signals to performs 4D convolutions by decomposing them into a combination of 3D convolutions performed on two planes and the time axis.
+
+\emph{Transmission-based imaging:} Each propagation distance inside a target represents one piece of target width information at one angle, by stitching together the width information at many angles can obtain the horizontal cut image of the target, but stitching them together to create the final image is still challenging, as the starting points of the propagation distances are unknown. \cite{Tagscan}discovers two target images estimated by two arrays will align well when the starting points of propagation distances are correctly selected, and thus model the imaging problem as an optimization problem by minimizing the difference of two images estimated from the two arrays.
+
+
+\textbf{Vibration detection:} Vibration detection plays a vital role in many applications, such as malfunction detection in electronic instrument, monitoring the displacement in vehicle, etc. Traditional vibration sensing schemes require dedicated sensors, which are very expensive. And most of them have a limit monitoring area. To avoid these drawbacks, \cite{Tagbeat} proposes to utilize commodity RFID to achieve
+vibration sensing. However, the challenges are: how to magnify tiny vibration signal induced by micro-vibration for easier detection? how to detect high-frequency vibration with a limited sampling rate of RFID?
+
+For the first challenge, a simple mathematical methodology is introduced, which multiplies the vibration amplitude by a constant. To deal with the second problem, a compressive sensing model is used to reconstruct the vibration signal so that can achieve sub-millisecond accuracy in vibration sensing.

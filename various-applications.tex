@@ -50,18 +50,13 @@ multiple device to avoid the time asynchrony~\cite{BeepBeep}.  The second issue 
 model parameters estimation. To deal with this problem, a typical intuition is to design different modulation for acoustic signal, such as
 frequency modulated carrier wave~(FMCW) and orthogonal frequency division multiplexing~(OFDM) \cite{CAT,STRATA}.
 
-\subsection{Behavior sensing} Human behavior recognition can enable a wide variety of applications, such as heath care, fitness tracking and sleep monitoring. Specifically, human behavior recognition contains
-large movement sensing such as postures and gait, and fine-grained movement sensing such as breathing, heart beat and lip language. Similarly to localization and tracking systems, human behavior recognition interfaces can also be classified as learning-based and model-based behavior recognition two categories.
+\subsection{Behavior sensing} Human behavior recognition can enable a wide variety of applications, such as heath care, fitness tracking and sleep monitoring. Similarly to localization and tracking systems, human behavior recognition interfaces can also be classified as learning-based and model-based behavior recognition two categories.
 
 \textbf{Learning-based behavior recognition:} For most irregular behaviors recognition, researches depend on pattern learning (DTW~\cite{Wang2014We}, KNN~\cite{Forster2011Incremental}, etc) to deal with it. To ensure the recognition accuracy of systems, we need to answer following questions.
 
 The first question is how to design a high-quality feature to achieve cross-site and large-scale sensing? To answer this, a intuitive idea is performing ensemble learning to extract the unique feature of each target~\cite{CrossSense}. The other question is how to effectively label substantial data? To address this, recent work proposes to borrow vision signal to help achieve labeling task in wireless sensing ~\cite{zhao2018rf}.
 
-\textbf{Model-based behavior recognition:} These model-based behavior recognition schemes can only be applied to analyze few human behaviors with a specific frequency range, such as walking, jogging, running, breathing and heart beat. These activities can be sensed according to that they can cause signal fluctuates with specific frequencies. To make the system operate well in reality, two typical challenges need to be addressed.
-
-How to extract weak signal such as breathing and heart beat? How to eliminate the interference from the other body parts' activities?
-
-To accurately detect the weak breathing and heart beat signals, an effective solution is to amplify them by exploiting the superposition of multiple paths existing in the environment. The interference activities from other body parts can be filtered out in frequency domain.
+\textbf{Model-based behavior recognition:} These model-based behavior recognition schemes can only be applied to analyze few human behaviors with a specific frequency range, such as coarse movements--walking, jogging, running~\cite{Wang2015Understanding} and fine-grained breathing and heart beat~\cite{Smart-homes}. These activities can be sensed according to that they can cause signal fluctuates with specific frequencies. However, the common challenge is how to eliminate the interference from the other body parts' activities? To address this, a general idea is to filter out the undesired activities beyond the target signal frequency range in frequency domain.
 
 \subsection{Material identification} Target material identification is a key role in our life, many applications would benefit from it, such as detecting concealed weapons and determining food deterioration. Existing material identification systems such as Radar, X-Ray, CT, MRI and B-scan ultrasonography use special hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Hence, there exits some challenges to identify target material with commodity device.
 

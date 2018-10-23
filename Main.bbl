@@ -21,6 +21,47 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Arraytrack}
+J.~Xiong and K.~Jamieson, ``Arraytrack: a fine-grained indoor location
+  system,'' in \emph{Proc. USENIX NSDI}, 2013, pp. 71--84.
+
+\bibitem{Tagoram}
+L.~Yang, Y.~Chen, X.~Y. Li, C.~Xiao, M.~Li, and Y.~Liu, ``Tagoram: real-time
+  tracking of mobile rfid tags to high precision using cots devices,'' in
+  \emph{International Conference on Mobile Computing and NETWORKING}, 2014, pp.
+  237--248.
+
+\bibitem{Wang2015Understanding}
+W.~Wang, A.~X. Liu, M.~Shahzad, K.~Ling, and S.~Lu, ``Understanding and
+  modeling of wifi signal based human activity recognition,'' in
+  \emph{International Conference on Mobile Computing and NETWORKING}, 2015, pp.
+  65--76.
+
+\bibitem{wang2016human}
+H.~Wang, D.~Zhang, J.~Ma, Y.~Wang, Y.~Wang, D.~Wu, T.~Gu, and B.~Xie, ``Human
+  respiration detection with commodity wifi devices: do user location and body
+  orientation matter?'' in \emph{Proceedings of the 2016 ACM International
+  Joint Conference on Pervasive and Ubiquitous Computing}.\hskip 1em plus 0.5em
+  minus 0.4em\relax ACM, 2016, pp. 25--36.
+
+\bibitem{Tagscan}
+J.~Wang, J.~Xiong, X.~Chen, H.~Jiang, R.~K. Balan, and D.~Fang, ``Tagscan:
+  Simultaneous target imaging and material identification with commodity rfid
+  devices,'' in \emph{Proc. ACM International Conference on Mobile Computing
+  and Networking. (MobiCom)}, 2017.
+
+\bibitem{LiquID}
+Y.~Z. H. H. R. R.~C. Ashutosh~Dhekne, Mahanth~Gowda, ``Liquid: A wireless
+  liquid identifier,'' in \emph{Pro. ACM international conference on Mobile
+  systems, applications, and services. {MobiSys}}, 2018.
+
+\bibitem{zhao2018rf}
+M.~Zhao, Y.~Tian, H.~Zhao, M.~A. Alsheikh, T.~Li, R.~Hristov, Z.~Kabelac,
+  D.~Katabi, and A.~Torralba, ``Rf-based 3d skeletons,'' in \emph{Proceedings
+  of the 2018 Conference of the ACM Special Interest Group on Data
+  Communication}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2018, pp.
+  267--281.
+
 \bibitem{Wang2016D}
 J.~Wang, J.~Xiong, H.~Jiang, X.~Chen, and D.~Fang, ``D-watch: Embracing ¡°bad¡±
   multipaths for device-free localization with cots rfid devices,'' in
@@ -37,10 +78,6 @@ J.~Wang and D.~Katabi, ``Dude, where's my card?:rfid positioning that works
   with multipath and non-line of sight,'' \emph{ACM SIGCOMM Computer
   Communication Review}, vol.~43, no.~4, pp. 51--62, 2013.
 
-\bibitem{Arraytrack}
-J.~Xiong and K.~Jamieson, ``Arraytrack: a fine-grained indoor location
-  system,'' in \emph{Proc. USENIX NSDI}, 2013, pp. 71--84.
-
 \bibitem{Spotfi}
 M.~Kotaru, K.~Joshi, D.~Bharadia, and S.~Katti, ``Spotfi: Decimeter level
   localization using wifi,'' in \emph{Proc. ACM SIGCOMM}, 2015, pp. 269--282.
@@ -49,12 +86,6 @@ M.~Kotaru, K.~Joshi, D.~Bharadia, and S.~Katti, ``Spotfi: Decimeter level
 J.~Wang, H.~Jiang, J.~Xiong, K.~Jamieson, X.~Chen, D.~Fang, and B.~Xie, ``Lifs:
   Low human-effort, device-free localization with fine-grained subcarrier
   information,'' in \emph{Proc. ACM MobiCom}, 2016, pp. 243--256.
-
-\bibitem{Tagoram}
-L.~Yang, Y.~Chen, X.~Y. Li, C.~Xiao, M.~Li, and Y.~Liu, ``Tagoram: real-time
-  tracking of mobile rfid tags to high precision using cots devices,'' in
-  \emph{International Conference on Mobile Computing and NETWORKING}, 2014, pp.
-  237--248.
 
 \bibitem{LLAP}
 W.~Wang, A.~X. Liu, and K.~Sun, ``Device-free gesture tracking using acoustic
@@ -93,23 +124,10 @@ J.~Z. T. L. F.~N. Wang, ``Crosssense: Towards cross-site and large-scale wifi
   sensing,'' in \emph{International Conference on Mobile Computing and
   NETWORKING}, 2018, pp. 69--81.
 
-\bibitem{zhao2018rf}
-M.~Zhao, Y.~Tian, H.~Zhao, M.~A. Alsheikh, T.~Li, R.~Hristov, Z.~Kabelac,
-  D.~Katabi, and A.~Torralba, ``Rf-based 3d skeletons,'' in \emph{Proceedings
-  of the 2018 Conference of the ACM Special Interest Group on Data
-  Communication}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2018, pp.
-  267--281.
-
-\bibitem{Tagscan}
-J.~Wang, J.~Xiong, X.~Chen, H.~Jiang, R.~K. Balan, and D.~Fang, ``Tagscan:
-  Simultaneous target imaging and material identification with commodity rfid
-  devices,'' in \emph{Proc. ACM International Conference on Mobile Computing
-  and Networking. (MobiCom)}, 2017.
-
-\bibitem{LiquID}
-Y.~Z. H. H. R. R.~C. Ashutosh~Dhekne, Mahanth~Gowda, ``Liquid: A wireless
-  liquid identifier,'' in \emph{Pro. ACM international conference on Mobile
-  systems, applications, and services. {MobiSys}}, 2018.
+\bibitem{Smart-homes}
+F.~Adib, H.~Mao, Z.~Kabelac, D.~Katabi, and R.~C. Miller, ``Smart homes that
+  monitor breathing and heart rate,'' in \emph{Proc. {ACM} ({CHI})}, 2015, pp.
+  837--846.
 
 \bibitem{Adib2017Capturing}
 F.~Adib, C.~Y. Hsu, H.~Mao, D.~Katabi, and F.~Durand, ``Capturing the human

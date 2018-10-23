@@ -69,7 +69,7 @@ To solve the first challenge, we can design a feature, which only depends on the
 
 
 \textbf{Reflection-based imaging:} In any reflection-based imaging system, occlusion and phase accuracy remains the fundamental challenges. How to imaging the targets through walls and occlusions? How to solve the impact of phase to imaging results?
-To solve the first problem, a deep neural network approach can be employed to deal with occlusion. To solve the second problem, there are two effective solutions, one of which using RSS, as RSS measurements of 60Ghz are highly robust against noises, [Reusing 60ghz radios] and the other is proposing a new Phase Gradient Algorithm to compensate phase errors~\cite{mao2018aim}.
+To solve the first problem, a deep neural network approach can be employed to deal with occlusion. To solve the second problem, there are two effective solutions, one of which using RSS, as RSS measurements of 60Ghz are highly robust against noises~\cite{Zhu2015Reusing}, and the other is proposing a new Phase Gradient Algorithm to compensate phase errors~\cite{mao2018aim}.
 
 \textbf{Transmission-based imaging:} Each propagation distance inside a target represents one piece of target width information at one angle, by stitching together the width information at many angles can obtain the horizontal cut image of the target. However, how to obtaining the starting points of the Transmission distances?
 To deal with the challenge, an effective solution is to model the imaging problem as an optimization problem by minimizing the difference of two images estimated from the two arrays~\cite{Tagscan}.

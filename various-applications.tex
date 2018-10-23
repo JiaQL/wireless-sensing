@@ -1,56 +1,70 @@
-\section {Various sensing applications}
-
-In recent years, with the emerging of the Internet of Thing (IoT), many wireless sensing applications have been inspired, especially for
-localization and tracking, behavior perception, material identification, target imaging and vibration detection. In this section, we will
-present these five mainstream applications respectively. We also discuss the challenges coming with them and corresponding efforts have
-made.
-
-\subsection{Localization and Tracking} Target localization and tracking are two most universal and significant sensing applications.
-Specifically, indoor localization has attracted much interest from both the industry and the research community. Among all the technologies
-employed for localization, Wi-Fi and RFID are considered as the most promising schemes due to the cheap price and widespread deployment.
-Furthermore, we can easily access the amplitude and phase information from commercial RFID and Wi-Fi devices. In the following, we will
-discuss previous indoor localization works, which can be classified into two categories: learning-based and model-based localization
-schemes.
-
-\textbf{Learning-based localization:} These systems collect received signal strength~(RSS) and channel state information~(CSI) at each
-location to build fingerprints for localization, which can achieve a meter-level accuracy. Although these systems are easy to be deployed,
-their localization accuracies are susceptible to environmental change and indoor multi-path. Furthermore, learning-based localization
-schemes suffer from labor-intensive offline training.
-
-\textbf{Model-based localization:} For a robust, higher accuracy and low cost system, more and more researches have a trend to explore
-model-based localization approaches, which can be divided into two categories. The first category of localization systems are based on
-arrival-of-angle~(AoA) or time-of-flight~(TOF) estimation, which achieve localization by intersecting multiple AoA or ToF estimates. The
-second category is energy-attenuation-based localization systems, which establish signal energy attenuation model to calculate target
-localization. These ideas sound simple, however, there exist some common challenges to make them practical.
-
-\paragraph*{Hardware imperfections} Due to commercial hardware imperfections, we cannot obtain accurate phase information and accurate time of
-flight.
-
-\paragraph*{multi-path effect} In our indoor environment, there exits rich  multi-path effects, which result in the inaccuracy of location
-parameter estimation and signal attenuation model construction.
-
-\paragraph*{Uncertainty of initial position} For the tracking systems, it is difficult to determine target's initial position.
+\section{Wireless Sensing Applications}
+Wireless sensing has been demonstrated to be effective on a wide range of tasks from localization onto activity recognition and material
+identification.
 
 
+\subsection{Localization} Target localization and tracking are two popular sensing applications. WiFi and radio-frequency
+identification (\RFID) are the predominate schemes used for this task, due to the low-cost and wide-scale deployment of the schemes.
+Acoustic signals have also been employed for localization and tracking, thanks to its slow propagation velocity and robustness to
+environment changes.
 
- To mitigate the phase error caused by commercial hardware imperfections, a general idea is to calibrate phase information by comparing it
- with the real pre sampled values \cite{Wang2016D}. Meanwhile, different frequencies can be utilized to emulate a very large bandwidth for
- achieving accurate time estimation~\cite{RFind}. To eliminate the multi-path effect, on the one hand, we can conversely exploit multi-path
- to capture multi-path profiles for target localization~\cite{PinIt}. On the other hand, by increasing the number of antennas in the array,
- we can improve angle estimation resolution to identify the line-of-sight~(LoS)~\cite{Arraytrack, Spotfi}. Furthermore, one skillful idea
- is to select clear subcarrier information to establish signal attenuation model~\cite{wang2016lifs}. To deal with the uncertainty of
- initial position, we can leverage virtual antenna array and approximate evaluation method to improve tracking accuracy~\cite{Tagoram}.
+ Localization can be achieved by using wireless fingerprints or a predictive model. A fingerprint-based approach works
+by first collecting the wireless fingerprints of a set of carefully chosen locations. During deployment, it compares the measured wireless
+channel metric (e.g., \RSSI or \CSI) against the pre-collected fingerprints, and then uses the most-similar fingerprint to infer the
+location of the target object. Such an approach has a low deployment cost, but its accuracy is susceptible to the environmental change and
+indoor multipath.
 
-In addition, acoustic signal has been widely used for localization and tracking, due to its slow propagation velocity and robustness to
-environment changes. However, there also exist several challenges that are similar to Wi-Fi and RFID based localization systems.
+As an alternative, predictive models learn the correlation between the wireless signal characteristics and the indoor locations. Such
+approaches can be categorized into two groups. The first is to use the arrival-of-angle (\AoA) or time-of-flight (\TOF) of the wireless
+signals for location estimation. The second is to exploit the signal energy attenuation for location estimation. Predictive models have the
+advantage of having a better generalization ability over the fingerprint counterparts, i.e., it can estimate arbitrary locations of the
+target environment.
 
-The first issue need to be tackled is the inaccuracy phase information and unsynchronized time induced by the defects of commercial
-acoustic devices. A standard solution is to use phase difference for tracking target location~\cite{LLAP}, another approach is employing
-multiple device to avoid the time asynchrony~\cite{BeepBeep}.  The second issue is the indoor multi-path, which results in inaccuracy of
-model parameters estimation. To deal with this problem, a typical intuition is to design different modulation for acoustic signal, such as
-frequency modulated carrier wave~(FMCW) and orthogonal frequency division multiplexing~(OFDM) \cite{CAT,STRATA}.
+However, predictive models are not a panacea and often suffer from hardware imperfections (e.g., it is difficult to obtain an accurate
+\TOF) and multipath effects (which make it hard for obtaining good signal attenuation). They also have the difficulties for determining the
+target's initial position. Several countermeasures have been proposed to address these issues. These include (i) using pre-collected
+fingerprints~\cite{Wang2016D}, directly modeling the phase differences~\cite{LLAP},  information obtained at multiple signal
+frequencies~\cite{RFind,CAT,STRATA}, or multiple tracking devices~\cite{BeepBeep} to improve the information gain; (ii) using multiple
+antennas~\cite{Arraytrack, Spotfi} to cancel the multipath effect or directly modeling the multipath profiles~\cite{PinIt}; and (iii)
+leveraging the virtual antenna array to obtain the initial position~\cite{Tagoram}.
 
-\subsection{Behavior sensing} Human behavior recognition can enable a wide variety of applications, such as heath care, fitness tracking and sleep monitoring. Similarly to localization and tracking systems, human behavior recognition interfaces can also be classified as learning-based and model-based behavior recognition two categories.
+%Furthermore, we can easily access the amplitude and phase information from commercial RFID and Wi-Fi devices.
+%
+%\textbf{Learning-based localization:} These systems collect received signal strength~(RSS) and channel state information~(CSI) at each
+%location to build fingerprints for localization, which can achieve a meter-level accuracy. Although these systems are easy to be deployed,
+%their localization accuracies are susceptible to environmental change and indoor multi-path. Furthermore, learning-based localization
+%schemes suffer from labor-intensive offline training.
+
+%\textbf{Model-based localization:} For a robust, higher accuracy and low cost system, more and more researches have a trend to explore
+%model-based localization approaches, which can be divided into two categories. The first category of localization systems are based on
+%arrival-of-angle~(AoA) or time-of-flight~(TOF) estimation, which achieve localization by intersecting multiple AoA or ToF estimates. The
+%second category is energy-attenuation-based localization systems, which establish signal energy attenuation model to calculate target
+%localization. These ideas sound simple, however, there exist some common challenges to make them practical.
+%
+%\paragraph*{Hardware imperfections} Due to commercial hardware imperfections, we cannot obtain accurate phase information and accurate time of
+%flight.
+%
+%\paragraph*{multi-path effect} In our indoor environment, there exits rich  multi-path effects, which result in the inaccuracy of location
+%parameter estimation and signal attenuation model construction.
+%
+%\paragraph*{Uncertainty of initial position} For the tracking systems, it is difficult to determine target's initial position.
+%
+%
+%
+% To mitigate the phase error caused by commercial hardware imperfections, a general idea is to calibrate phase information by comparing it
+% with the real pre sampled values \cite{Wang2016D}. Meanwhile, different frequencies can be utilized to emulate a very large bandwidth for
+% achieving accurate time estimation~\cite{RFind}. To eliminate the multi-path effect, on the one hand, we can conversely exploit multi-path
+% to capture multi-path profiles for target localization~\cite{PinIt}. On the other hand, by increasing the number of antennas in the array,
+% we can improve angle estimation resolution to identify the line-of-sight~(LoS)~\cite{Arraytrack, Spotfi}. Furthermore, one skillful idea
+% is to select clear subcarrier information to establish signal attenuation model~\cite{wang2016lifs}. To deal with the uncertainty of
+% initial position, we can leverage virtual antenna array and approximate evaluation method to improve tracking accuracy~\cite{Tagoram}.
+
+
+
+
+\subsection{Behavior sensing} Human behavior recognition can enable a wide variety of applications, such as heath care, fitness tracking
+and sleep monitoring. Similarly to localization and tracking systems, human behavior recognition interfaces can also be classified as
+learning-based and model-based behavior recognition two categories.
 
 \textbf{Learning-based behavior recognition:} For most irregular behaviors recognition, researches depend on pattern learning (DTW~\cite{Wang2014We}, KNN~\cite{Forster2011Incremental}, etc) to deal with it. To ensure the recognition accuracy of systems, we need to answer following questions.
 

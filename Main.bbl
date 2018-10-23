@@ -67,6 +67,10 @@ S.~Suzuki, ``[the discovery of x-rays and their introduction to japan at the
   end of the 19th century],'' \emph{Nihon Igaku Hoshasen Gakkai Zasshi},
   vol.~56, no.~5, pp. 241--250, 1996.
 
+\bibitem{Cruz2015Quantification}
+A.~C. Cruz, ``Quantification of cinematography semiotics for video-based facial
+  emotion recognition in the emotiw 2015 grand challenge,'' pp. 511--518, 2015.
+
 \bibitem{Wang2016D}
 J.~Wang, J.~Xiong, H.~Jiang, X.~Chen, and D.~Fang, ``D-watch: Embracing ¡°bad¡±
   multipaths for device-free localization with cots rfid devices,'' in
@@ -133,6 +137,11 @@ J.~Z. T. L. F.~N. Wang, ``Crosssense: Towards cross-site and large-scale wifi
 F.~Adib, H.~Mao, Z.~Kabelac, D.~Katabi, and R.~C. Miller, ``Smart homes that
   monitor breathing and heart rate,'' in \emph{Proc. {ACM} ({CHI})}, 2015, pp.
   837--846.
+
+\bibitem{Zhu2015Reusing}
+Y.~Zhu, Y.~Zhu, B.~Y. Zhao, and H.~Zheng, ``Reusing 60ghz radios for mobile
+  radar imaging,'' in \emph{International Conference on Mobile Computing and
+  NETWORKING}, 2015, pp. 103--116.
 
 \bibitem{mao2018aim}
 W.~Mao, M.~Wang, and L.~Qiu, ``Aim: Acoustic imaging on a mobile,'' 2018.

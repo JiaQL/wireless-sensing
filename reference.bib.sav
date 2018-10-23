@@ -227,31 +227,3 @@ year={2015}.
   pages={260237},
   year={2013},
 }
-
-@inproceedings{Zhao2017Emotion,
-  title={Emotion recognition using wireless signals},
-  author={Zhao, Mingmin and Adib, Fadel and Katabi, Dina},
-  booktitle={International Conference on Mobile Computing and NETWORKING},
-  pages={95-108},
-  year={2017},
-}
-
-@article{wang2017wifall,
-  title={Wifall: Device-free fall detection by wireless networks},
-  author={Wang, Yuxi and Wu, Kaishun and Ni, Lionel M},
-  journal={IEEE Transactions on Mobile Computing},
-  volume={16},
-  number={2},
-  pages={581--594},
-  year={2017},
-  publisher={IEEE}
-}
-
-@inproceedings{vasisht2016decimeter,
-  title={Decimeter-Level Localization with a Single WiFi Access Point.},
-  author={Vasisht, Deepak and Kumar, Swarun and Katabi, Dina},
-  booktitle={NSDI},
-  volume={16},
-  pages={165--178},
-  year={2016}
-}

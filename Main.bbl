@@ -67,6 +67,35 @@ S.~Suzuki, ``[the discovery of x-rays and their introduction to japan at the
   end of the 19th century],'' \emph{Nihon Igaku Hoshasen Gakkai Zasshi},
   vol.~56, no.~5, pp. 241--250, 1996.
 
+\bibitem{Cruz2015Quantification}
+A.~C. Cruz, ``Quantification of cinematography semiotics for video-based facial
+  emotion recognition in the emotiw 2015 grand challenge,'' pp. 511--518, 2015.
+
+\bibitem{De2013B}
+B.~F. De, B.~Wolff, M.~Mauget-Fa?sse, C.~Scemama, and L.~Kodjikian, ``B-scan
+  and "en-face" spectral-domain optical coherence tomography imaging for the
+  diagnosis and followup of acute retinal pigment epitheliitis.'' \emph{Case
+  Reports in Medicine,2013,(2013-2-17)}, vol. 2013, no.~2, p. 260237, 2013.
+
+\bibitem{vasisht2016decimeter}
+D.~Vasisht, S.~Kumar, and D.~Katabi, ``Decimeter-level localization with a
+  single wifi access point.'' in \emph{NSDI}, vol.~16, 2016, pp. 165--178.
+
+\bibitem{wang2017wifall}
+Y.~Wang, K.~Wu, and L.~M. Ni, ``Wifall: Device-free fall detection by wireless
+  networks,'' \emph{IEEE Transactions on Mobile Computing}, vol.~16, no.~2, pp.
+  581--594, 2017.
+
+\bibitem{Zhao2017Emotion}
+M.~Zhao, F.~Adib, and D.~Katabi, ``Emotion recognition using wireless
+  signals,'' in \emph{International Conference on Mobile Computing and
+  NETWORKING}, 2017, pp. 95--108.
+
+\bibitem{Smart-homes}
+F.~Adib, H.~Mao, Z.~Kabelac, D.~Katabi, and R.~C. Miller, ``Smart homes that
+  monitor breathing and heart rate,'' in \emph{Proc. {ACM} ({CHI})}, 2015, pp.
+  837--846.
+
 \bibitem{Wang2016D}
 J.~Wang, J.~Xiong, H.~Jiang, X.~Chen, and D.~Fang, ``D-watch: Embracing ¡°bad¡±
   multipaths for device-free localization with cots rfid devices,'' in
@@ -129,10 +158,10 @@ J.~Z. T. L. F.~N. Wang, ``Crosssense: Towards cross-site and large-scale wifi
   sensing,'' in \emph{International Conference on Mobile Computing and
   NETWORKING}, 2018, pp. 69--81.
 
-\bibitem{Smart-homes}
-F.~Adib, H.~Mao, Z.~Kabelac, D.~Katabi, and R.~C. Miller, ``Smart homes that
-  monitor breathing and heart rate,'' in \emph{Proc. {ACM} ({CHI})}, 2015, pp.
-  837--846.
+\bibitem{Zhu2015Reusing}
+Y.~Zhu, Y.~Zhu, B.~Y. Zhao, and H.~Zheng, ``Reusing 60ghz radios for mobile
+  radar imaging,'' in \emph{International Conference on Mobile Computing and
+  NETWORKING}, 2015, pp. 103--116.
 
 \bibitem{mao2018aim}
 W.~Mao, M.~Wang, and L.~Qiu, ``Aim: Acoustic imaging on a mobile,'' 2018.

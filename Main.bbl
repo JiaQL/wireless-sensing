@@ -77,6 +77,29 @@ W.~Mao, W.~Mao, W.~Mao, W.~Mao, and W.~Mao, ``Strata: Fine-grained
   acoustic-based device-free tracking,'' in \emph{International Conference on
   Mobile Systems, Applications, and Services}, 2017, pp. 15--28.
 
+\bibitem{Wang2014We}
+G.~Wang, Y.~Zou, Z.~Zhou, K.~Wu, and L.~M. Ni, ``We can hear you with wi-fi!''
+  in \emph{International Conference on Mobile Computing and Networking}, 2014,
+  pp. 593--604.
+
+\bibitem{Forster2011Incremental}
+K.~Forster, S.~Monteleone, A.~Calatroni, D.~Roggen, and G.~Troster,
+  ``Incremental knn classifier exploiting correct-error teacher for activity
+  recognition,'' in \emph{International Conference on Machine Learning and
+  Applications}, 2011, pp. 445--450.
+
+\bibitem{CrossSense}
+J.~Z. T. L. F.~N. Wang, ``Crosssense: Towards cross-site and large-scale wifi
+  sensing,'' in \emph{International Conference on Mobile Computing and
+  NETWORKING}, 2018, pp. 69--81.
+
+\bibitem{zhao2018rf}
+M.~Zhao, Y.~Tian, H.~Zhao, M.~A. Alsheikh, T.~Li, R.~Hristov, Z.~Kabelac,
+  D.~Katabi, and A.~Torralba, ``Rf-based 3d skeletons,'' in \emph{Proceedings
+  of the 2018 Conference of the ACM Special Interest Group on Data
+  Communication}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2018, pp.
+  267--281.
+
 \bibitem{Tagscan}
 J.~Wang, J.~Xiong, X.~Chen, H.~Jiang, R.~K. Balan, and D.~Fang, ``Tagscan:
   Simultaneous target imaging and material identification with commodity rfid
@@ -97,6 +120,14 @@ F.~Adib, C.~Y. Hsu, H.~Mao, D.~Katabi, and F.~Durand, ``Capturing the human
 Y.~Zhu, Y.~Zhu, B.~Y. Zhao, and H.~Zheng, ``Reusing 60ghz radios for mobile
   radar imaging,'' in \emph{International Conference on Mobile Computing and
   NETWORKING}, 2015, pp. 103--116.
+
+\bibitem{mao2018aim}
+W.~Mao, M.~Wang, and L.~Qiu, ``Aim: Acoustic imaging on a mobile,'' 2018.
+
+\bibitem{Zhao_2018_CVPR}
+M.~Zhao, T.~Li, M.~Abu~Alsheikh, Y.~Tian, H.~Zhao, A.~Torralba, and D.~Katabi,
+  ``Through-wall human pose estimation using radio signals,'' in \emph{The IEEE
+  Conference on Computer Vision and Pattern Recognition (CVPR)}, June 2018.
 
 \bibitem{Tagbeat}
 L.~Yang, Y.~Li, Q.~Lin, X.~Y. Li, and Y.~Liu, ``Making sense of mechanical

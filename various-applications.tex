@@ -62,15 +62,39 @@ leveraging the virtual antenna array to obtain the initial position~\cite{Tagora
 
 
 
-\subsection{Behavior sensing} Human behavior recognition can enable a wide variety of applications, such as heath care, fitness tracking
-and sleep monitoring. Similarly to localization and tracking systems, human behavior recognition interfaces can also be classified as
-learning-based and model-based behavior recognition two categories.
+\subsection{Activity and Behavior Recognition}
+Human activity and behavior recognition is another area where wireless sensing has demonstrated great potential.
 
-\textbf{Learning-based behavior recognition:} For most irregular behaviors recognition, researches depend on pattern learning (DTW~\cite{Wang2014We}, KNN~\cite{Forster2011Incremental}, etc) to deal with it. To ensure the recognition accuracy of systems, we need to answer following questions.
+Some of the early work of the area use multiple transmitters and receivers to construct a 3D lattice of wireless links to identify if there
+is a human movement and if so what is the user's location. Efforts have been made to use a single device equipped with multiple antennas to
+build a practical solution. For examples, WiSee~\cite{} was able to send signals from outside a room to track human movements; and WiTrack
+shows that is possible to recognize hand gestures from signal perturbations. A more recent work illustrates the possibility for using
+wireless signals for measuring a baby's breathing and heart rate~\cite{ Smart-homes}. The idea is that the chest movement caused by
+breathing would alert the signal reflections, which in turn allows one to capture the breathing event and count the heart rate with enough
+accuracy. By precisely counting the heart beats, one can even predict a user's emotion~\cite{}.
 
-The first question is how to design a high-quality feature to achieve cross-site and large-scale sensing? To answer this, a intuitive idea is performing ensemble learning to extract the unique feature of each target~\cite{CrossSense}. The other question is how to effectively label substantial data? To address this, recent work proposes to borrow vision signal to help achieve labeling task in wireless sensing ~\cite{zhao2018rf}.
+Machine learning based classifiers have been widely used in activity recognition. The effectiveness of such schemes in general depends on
+the quality of the training data and features for capturing the characteristics of the data. As a result, some of the recent research
+efforts turn into seeking ways to automatically identify useful features~\cite{CrossSense} or reduce the human involvements (and thus the
+ cost) for generating high-quality training data~\cite{zhao2018rf}.
 
-\textbf{Model-based behavior recognition:} These model-based behavior recognition schemes can only be applied to analyze few human behaviors with a specific frequency range, such as coarse movements--walking, jogging, running~\cite{Wang2015Understanding} and fine-grained breathing and heart beat~\cite{Smart-homes}. These activities can be sensed according to that they can cause signal fluctuates with specific frequencies. However, the common challenge is how to eliminate the interference from the other body parts' activities? To address this, a general idea is to filter out the undesired activities beyond the target signal frequency range in frequency domain.
+
+%Human behavior recognition can enable a wide variety of applications, such as heath care, fitness tracking
+%and sleep monitoring. Similarly to localization and tracking systems, human behavior recognition interfaces can also be classified as
+%learning-based and model-based behavior recognition two categories.
+%
+%\textbf{Learning-based behavior recognition:} For most irregular behaviors recognition, researches depend on pattern learning (DTW~\cite{Wang2014We}, KNN~\cite{Forster2011Incremental}, etc) to deal with it. To ensure the recognition accuracy of systems, we need to answer following questions.
+%
+%The first question is how to design a high-quality feature to achieve cross-site and large-scale sensing? To answer this, a intuitive idea
+%is performing ensemble learning to extract the unique feature of each target~\cite{CrossSense}. The other question is how to effectively
+%label substantial data? To address this, recent work proposes to borrow vision signal to help achieve labeling task in wireless sensing
+%~\cite{zhao2018rf}.
+%
+%\textbf{Model-based behavior recognition:} These model-based behavior recognition schemes can only be applied to analyze few human
+%behaviors with a specific frequency range, such as coarse movements--walking, jogging, running~\cite{Wang2015Understanding} and
+%fine-grained breathing and heart beat~\cite{Smart-homes}. These activities can be sensed according to that they can cause signal fluctuates
+%with specific frequencies. However, the common challenge is how to eliminate the interference from the other body parts' activities? To
+%address this, a general idea is to filter out the undesired activities beyond the target signal frequency range in frequency domain.
 
 \subsection{Material identification} Target material identification is a key role in our life, many applications would benefit from it, such as detecting concealed weapons and determining food deterioration. Existing material identification systems such as Radar, X-Ray, CT, MRI and B-scan ultrasonography use special hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Hence, there exits some challenges to identify target material with commodity device.
 

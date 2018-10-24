@@ -1,4 +1,4 @@
-\section{How Does It Work?\label{sec:mechanism}}
+\section{Working Mechanism of Wireless Sensing\label{sec:mechanism}}
 \begin{figure} [t!]
        \centering
         \subfigure[]{
@@ -16,14 +16,15 @@
 \end{figure}
 
 
-To illustrate the working mechanism of wireless sensing, consider the gait identification scenario depicted in Figure~\ref{fig:scenario_1}.
-The sensing task in this example is to identify which of a set of known users has walked pass the scene. Knowing this information allows
-one to -- for example -- personalize the light setting of a smart home. Here, two wireless routers (a sender and a receiver) are used to
-measure how the user's movement affect the wireless channel metric, such as the channel state information (\CSI) or received signal
-strength indicator (\RSSI). The idea is that the wireless signal will bounce off the wall, furniture, and human body, and the unique
-behavior of a person's activity (walking in this example) would lead to a unique pattern in the wireless signal; by measuring how the
-wireless signal is affected by the human activity and comparing the measurement against some pre-collected fingerprints or training data,
-one can infer what activity has been performed and by whom.
+\subsection{Working Example}
+To illustrate how wireless sensing works, consider the gait identification scenario depicted in Figure~\ref{fig:scenario_1}. The sensing
+task in this example is to identify which of a set of known users has walked pass the scene. Knowing this information allows one to -- for
+example -- personalize the light setting of a smart home. Here, two wireless routers (a sender and a receiver) are used to measure how the
+user's movement affect the wireless channel metric, such as the channel state information (\CSI) or received signal strength indicator
+(\RSSI). The idea is that the wireless signal -- called ``multipath" -- will bounce off the wall, furniture, and human body, and the human
+activity can lead to a subtle change on the attenuation and reflections of the signal; by measuring how the wireless signal is affected by
+the activity and comparing the measurement against some pre-collected training data, one can infer what activity has been performed and by
+whom.
 
 Figure~\ref{fig:csi_diff} shows the measured \CSI amplitudes of two users in our scenario. In this case, each user walked through our scene
 five times and the \CSI amplitude per walk is shown. This figure suggests that wireless channel metrics can be a useful means for user

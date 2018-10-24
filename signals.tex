@@ -1,6 +1,9 @@
-\section {Wireless Sensing Signals}
-A wide range of wireless signals have been used in the past for various sensing tasks. Table~\ref{Tab1} summarizes what wireless signals
-have been employed in previous consumer-grade solutions.
+\subsection {Choices of Wireless Sensing Signals}
+As summarized in Table~\ref{Tab1}, a wide range of wireless signals have been employed in prior work for information sensing. These include
+WiFi, \RF, acoustic, LoRa and visible lights, frequency-modulated continuous-wave (\FMCW) radar and ultra-wideband (\UWB). Signals like
+WiFi, acoustic, and visible lights are readily available on commercial off-the-self devices (such as smartphones and smart light bulbs),
+while others like \UWB, LoRa and \FMCW often require specialize hardware to operate.
+
 
 
 \renewcommand\arraystretch{2}
@@ -9,7 +12,11 @@ have been employed in previous consumer-grade solutions.
 \caption{Consumer-grade wireless signals used in prior sensing tasks.}
 \label{Tab1}
 \setlength{\tabcolsep}{7mm}
+<<<<<<< HEAD
 \begin{tabular}{p{0.5cm}p{0.6cm}<{\raggedright}p{0.9cm}<{\raggedright}p{1.0cm}<{\raggedright}p{0.6cm}<{\raggedright}p{1.2cm}<{\raggedright}p{0.9cm}<{\raggedright}p{1.2cm}<{\raggedright}}
+=======
+\begin{tabular}{p{0.6cm}p{0.6cm}<{\raggedright}p{0.9cm}<{\raggedright}p{1.0cm}<{\raggedright}p{0.6cm}<{\raggedright}p{1.2cm}<{\raggedright}p{0.9cm}<{\raggedright}p{0.6cm}<{\raggedright}}
+>>>>>>> db419d9efa962e13c64a5e8602611dff3bdbc5aa
 \toprule
 %\diagbox[width=5em,trim=l]{Properties}{Signal} & Wi-Fi & RFID & UWB & Asoustic & LoRa & FMCW radar & Visible Light \\
 \textbf{Properties} & \textbf{WiFi} & \textbf{RFID} & \textbf{UWB} & \textbf{Asoustic} & \textbf{LoRa} & \textbf{FMCW radar} & \textbf{Visible Light} \\
@@ -19,18 +26,21 @@ have been employed in previous consumer-grade solutions.
 \rowcolor{Gray} \textbf{Bandwidth} & 20/40MHz & 24.5MHz & 1GHZ & -- & 125/250/500KHz & 250MHz & --\\
 \textbf{Metrics} & CSI, \RSSI & Phase, Doppler, \RSSI & Phase, \RSSI& Phase, \RSSI & Frequency, Phase, \RSSI & Frequency, Phase, \RSSI & \RSSI\\
 \rowcolor{Gray} \textbf{Cost} & Low & Low & High & Low & Low & High & High\\
+<<<<<<< HEAD
 \textbf{Modulation} & OFDM & OOK & PPM & AM/FM/PM & CSS& FMCW & OOK/CSK/VPPM\\
+=======
+%\textbf{Modulation} & OFDM & OOK & PPM & AM,FM,PM & CSS& FMCW & OOK,CSK,VPPM\\
+>>>>>>> db419d9efa962e13c64a5e8602611dff3bdbc5aa
 \bottomrule
 \end{tabular}
 %\caption{Different wireless signals with different properties.}%\lable{Tab1}
 \end{table*}
 
-%From the Table~\ref{Tab1}, we can see that different wireless signals not only have their own unique properties, but also share the common
-%information including phase, \RSSI and frequency. These common information allow them to be applied for sensing, and their own
-%characteristics determine their own befitting sensing scenarios.
 
-\FIXME{Here we need to give an extensive discussion on the prosperities of different wireless signals.}
-
-Which signal is best for a sensing task, is the \$64,000 question. The answer is, it depends. Some wireless signals like LoRa  may provide
-a longer sensing range, but they require specialize hardware. \FIXME{Here we contrast and discuss the strengths and weakness of different
-wireless signals. }
+Which signal is best for a sensing task, is the \$64,000 question. The answer is, it depends. For examples, while WiFi is almost
+everywhere, it is limited in the communication range (i.e., 5 to 10 meters) and consumes a significant amount of power; by contrast, LoRa
+supports a longer range (i.e., 15 Kilometers) and needs significantly less power to operate, but it has a much lower bandwidth and is more
+sensitive to the environmental multipath. Different signals also operate at different frequencies and offer a variety of sensing metrics.
+Some of the signals like \FMCW radar can provide an accurate tracking capability but is more expensive to deploy. It is important to note
+that there is no ``one-size-fits-all" sensing medium, and the choice depends on the trade-off between the precision requirements, the
+deployment environment, and the budget.

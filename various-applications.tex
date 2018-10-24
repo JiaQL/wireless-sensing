@@ -96,10 +96,9 @@ efforts turn into seeking ways to automatically identify useful features~\cite{C
 %with specific frequencies. However, the common challenge is how to eliminate the interference from the other body parts' activities? To
 %address this, a general idea is to filter out the undesired activities beyond the target signal frequency range in frequency domain.
 
-\subsection{Material identification} Target material identification is a key role in our life, many applications would benefit from it, such as detecting concealed weapons and determining food deterioration.
+\subsection{Material identification}Target material identification is a key role in our life, many applications would benefit from it, such as detecting concealed weapons and determining food deterioration.
 
-Existing material identification systems such as Radar, X-Ray, CT, MRI and B-scan ultrasonography use specialized hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Recently, some works utilize the wireless signal to sense the target material. For examples,
-\cite{Tagscan} designs a feature, which is the ratio of RSSI change and phase change to depend on the material type and independent of target size. Consider that the liquid containers and liquid reflections have some impacts on the above feature, \cite{LiquID} employs UWB devices with high bandwidth to accurate estimate the time of signal propagation, and use it to remove the impact of containers and liquid reflections.
+Existing material identification systems such as Radar, X-Ray, CT, MRI and B-scan ultrasonography use special hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Recently, some works utilize the wireless signal to sense the target material. For examples, \cite{Tagscan} use the property of wireless signals propagating in liquids to identify the different material, which is the changes of RSS and phase. Similarly, \cite{LiquID} utilizes cheap UWB devices with 1GHz bandwidth to extract the dielectric constant for fine-grained liquid sensing.
 
 %Target material identification is a key role in our life, many applications would benefit from it, such as detecting concealed weapons and determining food deterioration. Existing material identification systems such as Radar, X-Ray, CT, MRI and B-scan ultrasonography use special hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Hence, there exits some challenges to identify target material with commodity device.
 %
@@ -123,7 +122,7 @@ Traditional imaging systems like Radar, X-Ray, CT employ dedicated hardware with
 %To deal with the challenge, an effective solution is to model the imaging problem as an optimization problem by minimizing the difference of two images estimated from the two arrays~\cite{Tagscan}.
 
 
-\subsection{Vibration detection}  Vibration detection plays a vital role in many applications, such as malfunction detection in electronic instrument, monitoring the displacement in vehicle, etc. Traditional vibration sensing schemes require dedicated sensors, which are very expensive. And most of them have a limit monitoring area.
+\subsection{Vibration detection}   Vibration detection plays a vital role in many applications, such as malfunction detection in electronic instrument, monitoring the displacement in vehicle, etc. Traditional vibration sensing schemes require dedicated sensors, which are very expensive. And most of them have a limit monitoring area.
 
 To avoid these drawbacks, \cite{Tagbeat} proposes to utilize commodity RFID to achieve sub-millisecond vibration sensing. In order to magnify tiny vibration signal induced by micro-vibration this paper introduced a simple mathematical methodology to multiplies the vibration amplitude by a constant. Also, they proposed a compressive sensing model to reconstruct the vibration signal to overcome the challenge of detecting high-frequency vibration with a limited sampling rate.
 

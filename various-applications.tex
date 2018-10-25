@@ -96,9 +96,6 @@ efforts turn into seeking ways to automatically identify useful features~\cite{C
 %with specific frequencies. However, the common challenge is how to eliminate the interference from the other body parts' activities? To
 %address this, a general idea is to filter out the undesired activities beyond the target signal frequency range in frequency domain.
 
-\subsection{Material identification}Target material identification is a key role in our life, many applications would benefit from it, such as detecting concealed weapons and determining food deterioration.
-
-Existing material identification systems such as Radar, X-Ray, CT, MRI and B-scan ultrasonography use special hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Recently, some works utilize the wireless signal to sense the target material. For examples, \cite{Tagscan} use the property of wireless signals propagating in liquids to identify the different material, which is the changes of RSS and phase. Similarly, \cite{LiquID} utilizes cheap UWB devices with 1GHz bandwidth to extract the dielectric constant for fine-grained liquid sensing.
 
 %Target material identification is a key role in our life, many applications would benefit from it, such as detecting concealed weapons and determining food deterioration. Existing material identification systems such as Radar, X-Ray, CT, MRI and B-scan ultrasonography use special hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Hence, there exits some challenges to identify target material with commodity device.
 %
@@ -107,10 +104,40 @@ Existing material identification systems such as Radar, X-Ray, CT, MRI and B-sca
 %To solve the first challenge, we can design a feature, which only depends on the material type and independent of target size, such as the ratio of RSS change and phase change \cite{Tagscan}. Consider that the liquid containers and liquid reflections have some impacts on the above feature, \cite{LiquID} employs UWB devices with high bandwidth to accurate estimate the time of signal propagation, and use it to remove the impact of containers and liquid reflections.
 
 
-\subsection{Target imaging and 3D reconstruction} 
+\subsection{Target Imaging and 3D Reconstruction}
 
-Target imaging is a new area where has attracted much interest from both the industry and the research community.
-Traditional imaging systems like Radar, X-Ray, CT employ dedicated hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Hence, some researchers attempt to use RF signals to image a target¡¯ shape. Tagscan~\cite{Tagscan} leverages each propagation distance inside a target represents one piece of target width information at one angle, by stitching together the width information at many angles can obtain the horizontal cut image of the target. However, this approach needs a robot with antenna moves around the target, which extremely limits the system¡¯s practicability. To deal with this issue, RF-Capture~\cite{Adib2017Capturing} utilizes a FMCW device to reconstruct the skeleton of a human target behind a wall by extracting the signal reflections from human body parts. However, this system exhibits some limitations. For example, it needs target starts by walking towards the device, then it only adopts a simple model for the human body for segmentation and skeletal stitching, which only captures a very coarse-grained target image. To further deal with these problems, RF-Pose3D~\cite{zhao2018rf} infers 3D human skeletons by incorporating RF signal and visual stream. It first leverages deep CNN to infer the person¡¯s 3D skeleton, and then uses the visual stream to label different target skeleton. Finally, this system can track each keypoint on the human body with a cm-level accuracy.
+Target imaging is another area that has attracted extensive attentions. Traditional imaging systems like Radar, X-Ray, CT employ dedicated
+hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Hence, some
+researchers attempt to use RF signals to image a target' shape. Tagscan~\cite{Tagscan} leverages each propagation distance inside a target
+represents one piece of target width information at one angle, by stitching together the width information at many angles can obtain the
+horizontal cut image of the target. However, this approach needs a robot with antenna moves around the target, which extremely limits the
+system's practicability. To deal with this issue, RF-Capture~\cite{Adib2017Capturing} utilizes a FMCW device to reconstruct the skeleton of
+a human target behind a wall by extracting the signal reflections from human body parts. However, this system exhibits some limitations.
+For example, it needs target starts by walking towards the device, then it only adopts a simple model for the human body for segmentation
+and skeletal stitching, which only captures a very coarse-grained target image. To further deal with these problems,
+RF-Pose3D~\cite{zhao2018rf} infers 3D human skeletons by incorporating RF signal and visual stream. It first leverages deep CNN to infer
+the person's 3D skeleton, and then uses the visual stream to label different target skeleton. Finally, this system can track each key point
+on the human body with a cm-level accuracy.
+
+
+\subsection{Object Material Identification}
+Material identification is another recent breakthrough for consumer-grade wireless sensing. This task is important for many day to day
+applications such as detecting concealed weapons and determining food deterioration.
+
+Existing material identification systems such as Radar, X-Ray, CT, MRI and B-scan ultrasonography use special hardware with high frequency,
+large bandwidth and antenna arrays. They are expensive to purchase and operate. Some of the recent work utilize the low-cost wireless
+signals like \RF to sense the target materials and achieve impressive results. TagScan~\cite{Tagscan} detects the change of the \RSSI and
+phase when the \RF signal penetrates through the target. When evaluating on 10 liquids, TagScan was able to successfully identify over 94\%
+of the test objects and tells the different between Coke and Pepsi. Such an approach offers a low-cost alternative, but due to the
+limitation of the technology, it is not expected to be used at security-critical scenarios like airport security check.
+
+
+%
+%
+% the property of
+%wireless signals propagating in liquids to identify the different material, which is the changes of RSS and phase. Similarly, \cite{LiquID}
+%utilizes cheap UWB devices with 1GHz bandwidth to extract the dielectric constant for fine-grained liquid sensing.
+
 
 %Target imaging plays a vital role in computer vision with applications such as surveillance, activity recognition, gaming, ect. As wireless signal can reflect off or penetrate through various objects, researchers have attempted to extract rich and detailed information about the target for imaging and 3D reconstruction. All of the works can be classified into two categories: reflection-based imaging and transmission-based imaging.
 %
@@ -122,9 +149,14 @@ Traditional imaging systems like Radar, X-Ray, CT employ dedicated hardware with
 %To deal with the challenge, an effective solution is to model the imaging problem as an optimization problem by minimizing the difference of two images estimated from the two arrays~\cite{Tagscan}.
 
 
-\subsection{Vibration detection}   Vibration detection plays a vital role in many applications, such as malfunction detection in electronic instrument, monitoring the displacement in vehicle, etc. Traditional vibration sensing schemes require dedicated sensors, which are very expensive. And most of them have a limit monitoring area.
+\subsection{Vibration Detection}   Vibration detection plays a vital role in many applications, such as malfunction detection in electronic instrument,
+monitoring the displacement in vehicle, etc. Traditional vibration sensing schemes require dedicated sensors, which are very expensive. And
+most of them have a limit monitoring area.
 
-To avoid these drawbacks, \cite{Tagbeat} proposes to utilize commodity RFID to achieve sub-millisecond vibration sensing. In order to magnify tiny vibration signal induced by micro-vibration this paper introduced a simple mathematical methodology to multiplies the vibration amplitude by a constant. Also, they proposed a compressive sensing model to reconstruct the vibration signal to overcome the challenge of detecting high-frequency vibration with a limited sampling rate.
+To avoid these drawbacks, TagBeat~\cite{Tagbeat} proposes to utilize commodity \RFID to achieve sub-millisecond vibration sensing. In order
+to magnify tiny vibration signal induced by micro-vibration this paper introduced a simple mathematical methodology to multiplies the
+vibration amplitude by a constant. Also, they proposed a compressive sensing model to reconstruct the vibration signal to overcome the
+challenge of detecting high-frequency vibration with a limited sampling rate.
 
 %Vibration detection plays a vital role in many applications, such as malfunction detection in electronic instrument, monitoring the displacement in vehicle, etc. Traditional vibration sensing schemes require dedicated sensors, which are very expensive. And most of them have a limit monitoring area. To avoid these drawbacks, \cite{Tagbeat} proposes to utilize commodity RFID to achieve
 %vibration sensing. However, the challenges are: how to magnify tiny vibration signal induced by micro-vibration for easier detection? how to detect high-frequency vibration with a limited sampling rate of RFID?

@@ -11,28 +11,29 @@ sensing task, how to make sure the scheme can be portable to different environme
 dealing with the multipath effect, but they often require a large bandwidth or antenna array. This assumption reduce the practicability of
 the approach. Therefore, there is a need for effective multipath and noise suppressing algorithms.
 
-\paragraph*{Clock synchronization} Wireless sensing systems often use multiple devices, such as transmitters and receivers. These devices often
+\paragraph*{Clock synchronization} Wireless sensing systems often use multiple devices, such as transmitters and receivers, to track objects and activities. These devices often
 need to exchange information at a high frequency. Precise clock synchronization is essential for good performance because the time is used
 to calculate wireless channel information such as the phase, and an error of nanoseconds can translate to a localization error of a few
 meters. However, obtaining synchronized time at a fine-grained level among computing multiple devices is challenging due to the differences
-in the hardware clocks. On solution is to using a wire to synchronize the clocks between two devices, but the effectiveness of the solution
-decreases as the distance between the devices increases. This limits the applicability of the approach.
+in the hardware clocks. One solution is to using a wire to synchronize the clocks between two devices, but the effectiveness of the
+solution decreases as the distance between the devices increases. This limits the applicability of the approach.
 
-\paragraph*{Deployment cost} To the best of our knowledge, the non-contact sensing performance is highly relevant to the deployment when
-the transmitter and the receiver are placed separately, due to the presence of Fresnel zones~\cite{wang2016human}. The optimal transceiver
-placement would contribute to high sensing accuracy, while a random placement would lead to large amount of blind spots for sensing. So
-the deployment issue should be taken into account in real applications. Of course, we need to pay attention to an implicit trade-off
-between improving the sensing accuracy and resolving the inconveniences. Since the optimal deployment is always at the expense of more
-restrictions, so that brings much inconvenient experience for user. Therefore, it is recommended to choose the suitable deployment
-according to the specific application, and make a good compromise between practicality and sensing performance.
+\paragraph*{Deployment cost} The performance of a wireless sensing system highly depends on how the transmitters and receivers are placed
+and the environment the sensing model is tuned for. Determining the optimal device deployment is challenging due to the subtle interactions
+of the signal coverage and the multipath effects~\cite{wang2016human}. The optimal deployment also changes if the environment has changed,
+e.g., adding or removing some furniture. Such a change often requires recollecting the training samples to update the sensing model, which
+is often associated with intensive human involvement at a high cost. A recent work addresses the issue by using machine learning to
+generate synthetic training examples~\cite{CrossSense}. While this work was able to reduce the cost for collecting training data, it does
+not eliminate it. Therefore, the issue of deployment cost remains.
 
-\paragraph*{Transfer problem} Many learning based sensing methods can achieve high accuracy without requiring intensive communication
-links, and can work with even a single transceiver pair, which ensures low hardware cost and great convenience. However, one major unsolved
-issue is that the learned patterns can hardly adapt to the changes of environment and time. For long-term or varying scenarios, the sensing
-accuracy would decline seriously if we still utilize the original patterns, and constant updating patterns comes with a huge training cost.
-Recent works attempt to solve this problem by deep learning technology that can extract hidden useful features of higher dimensions, while
-these methods lack theoretical basis. To make sensing more convincing, it is better to combine learning with theoretical models by
-excavating and analyzing the physical nature of signal changes.
+
+
+%\paragraph*{Generalization problem} Many learning based sensing methods can work effectively with even a single transceiver pair.
+%This reduces the hardware cost. However, one major unsolved issue is that the learned model can hardly adapt to the changes of environment
+%and time. For long-term or varying scenarios, the sensing accuracy would decline seriously if we still utilize the original patterns, and
+%constant updating patterns comes with a huge training cost. Recent works attempt to solve this problem by deep learning technology that can
+%extract hidden useful features of higher dimensions, while these methods lack theoretical basis. To make sensing more convincing, it is
+%better to combine learning with theoretical models by excavating and analyzing the physical nature of signal changes.
 
 \paragraph*{Tiny signal extraction} Some interfaces realize their sensing objective by leveraging the reflected signal caused by the
 target. Nevertheless, the wireless signal arriving at receiver is always a superposition of  direct path and various reflected paths. In

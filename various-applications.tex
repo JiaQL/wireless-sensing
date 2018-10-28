@@ -48,12 +48,9 @@ efforts turn into seeking ways to automatically identify useful features~\cite{C
 \subsection{Target Imaging and 3D Reconstruction}
 
 Target imaging is another area that has attracted extensive attentions. Traditional imaging systems like Radar, X-rays and CT employ dedicated
-hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size or have some negative impact on the human body.  Hence, researchers attempt to employ \RF signals generated from cheap commodity device to image a target's shape. WiFi based system Wision~\cite{Huang2014Feasibility} utilizes the re?ected signals from
-the target for imaging. Its imaging performance is quite coarse due to the small bandwidth of commodity WiFi. Tagscan~\cite{Tagscan} leverages the phase and amplitude change at each angle to obtain the target width information and stitches together the width information at many angles to obtain the
-horizontal cut image of the target. However, this approach needs a robot with antenna moves around the target, which extremely limits the
-system's practicability. To deal with this issue, RF-Capture~\cite{Adib2017Capturing} utilizes \FMCW signals to reconstruct the skeleton of
-a human target behind a wall by extracting the signal reflections from human body parts. However, this system still has some limitations. For example, it requires the target to start walking towards the device and it adopts a simple model which only captures a coarse target image. To further deal with these problems,
-RF-Pose3D~\cite{zhao2018rf} infers 3D human skeleton by incorporating \FMCW signal and visual stream. It first leverages deep CNN to infer
+hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. In recent years, researchers attempt to employ \RF signals generated from cheap commodity device to image a target's shape. For instances, WiFi based system Wision~\cite{Huang2014Feasibility} utilizes the re?ected signals from the target for imaging. Its imaging performance is quite coarse due to the small bandwidth of commodity WiFi. Tagscan~\cite{Tagscan} leverages the RFID signal change at each angle to obtain the target width information and stitches together the width information at many angles to obtain the horizontal cut image of the target. However, this approach needs a robot with antenna moves around the target, which extremely limits the system's practicability. 
+
+To make compromise between hardware cost and accuracy. New methods by using \FMCW technology for imaging have been proposed. RF-Capture~\cite{Adib2017Capturing} can reconstruct the coarse skeleton of a human target behind a wall by extracting the signal reflections from body parts of a moving target. The latest work RF-Pose3D~\cite{zhao2018rf} infers 3D human skeleton by incorporating \RF signal~(\FMCW) and visual stream. It first leverages deep CNN to infer
 the person's 3D skeleton, and then uses the visual stream to label different target skeletons. RF-Pose3D can track each key point
 on the human body at a centimeter-level accuracy.
 

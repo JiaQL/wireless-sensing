@@ -47,23 +47,20 @@ efforts turn into seeking ways to automatically identify useful features~\cite{C
 
 \subsection{Target Imaging and 3D Reconstruction}
 
-Target imaging is another area that has attracted extensive attentions. Traditional imaging systems like Radar, X-rays and CT employ dedicated
-hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. In recent years, researchers attempt to employ \RF signals generated from cheap commodity device to image a target's shape. For instances, WiFi based system Wision~\cite{Huang2014Feasibility} utilizes the re?ected signals from the target for imaging. Its imaging performance is quite coarse due to the small bandwidth of commodity WiFi. Tagscan~\cite{Tagscan} leverages the RFID signal change at each angle to obtain the target width information and stitches together the width information at many angles to obtain the horizontal cut image of the target. However, this approach needs a robot with antenna moves around the target, which extremely limits the system's practicability. 
+Target imaging is another area that has attracted extensive attentions. Traditional imaging systems like X-rays and CT employ dedicated
+hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. In recent years, researchers attempt to employ \RF signals to image a target's shape. For instances, \WiFi based system Wision~\cite{Huang2014Feasibility} utilizes the reflected signals from the target for imaging. Its imaging performance is quite coarse due to the small bandwidth of commodity \WiFi. Tagscan~\cite{Tagscan} leverages the RFID signal change at each angle to obtain the target width information and stitches together the width information at many angles to obtain the horizontal cut image of the target.
 
-To make compromise between hardware cost and accuracy. New methods by using \FMCW technology for imaging have been proposed. RF-Capture~\cite{Adib2017Capturing} can reconstruct the coarse skeleton of a human target behind a wall by extracting the signal reflections from body parts of a moving target. The latest work RF-Pose3D~\cite{zhao2018rf} infers 3D human skeleton by incorporating \RF signal~(\FMCW) and visual stream. It first leverages deep CNN to infer
-the person's 3D skeleton, and then uses the visual stream to label different target skeletons. RF-Pose3D can track each key point
-on the human body at a centimeter-level accuracy.
+Meanwhile, more advanced methods by using \FMCW technology for imaging have been proposed. RF-Capture~\cite{Adib2017Capturing} can reconstruct the coarse skeleton of a human target behind a wall by extracting the signal reflections from body parts of a moving target. The latest work RF-Pose3D~\cite{zhao2018rf} infers 3D human skeleton by incorporating \RF signal~(\FMCW) and visual stream. It first leverages deep CNN to infer the person's 3D skeleton, and then uses the visual stream to label different target skeletons. RF-Pose3D can track each key point on the human body at a centimeter-level accuracy.
 
 
 \subsection{Object Material Identification}
 Material identification is another exciting direction for wireless sensing. It can be adopted in
 applications such as detecting concealed weapons and expired milk. % deterioration.
 
-Existing material identification systems such as Radar, X-rays, CT, MRI and B-scan ultrasonography employ extreme high
+Existing material identification systems such as X-rays, CT, MRI and B-scan ultrasonography employ extreme high
 frequency signals for sensing. They are expensive and need professionals to operate. Some of the recent work utilize the low-cost
-wireless signals like \RFID to sense the target material. TagScan~\cite{Tagscan} detects the changes of the
-\RSSI and phase when the \RF signal penetrates through the target. When evaluating on 10 liquids, TagScan is able to successfully identify
-the test objects at 94\% accuracy and differentiate between Coke and Pepsi.% Such an approach offers a low-cost alternative, but due to the limitation of the technology, it is not expected to be used at security-critical scenarios like airport security check.
+wireless signals to sense the target material. Typically, TagScan~\cite{Tagscan} identifies the target material by detecting the changes of the
+\RSSI and phase when the \RFID signal penetrates through the target, it is able to differentiate between Coke and Pepsi. \cite{In-baggage} explores the feasibility of using \CSI from COTS WiFi to detect suspicious objects (i.e., liquid objects and metal) hidden in baggage. LiquID~\cite{LiquID} also uses the cheap off-the-self \UWB radios to identify liquids.
 
 
 \subsection{Vibration Detection}   Vibration detection plays a vital role in many applications, such as malfunction detection in electronic instrument and

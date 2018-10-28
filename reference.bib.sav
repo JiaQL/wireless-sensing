@@ -1,229 +1,250 @@
 @inproceedings{Wang2016D,
-  title={D-Watch: Embracing ¡°Bad¡± Multipaths for Device-Free Localization With COTS RFID Devices},
-  author={Wang, Ju and Xiong, Jie and Jiang, Hongbo and Chen, Xiaojiang and Fang, Dingyi},
-  booktitle={International on Conference on Emerging NETWORKING Experiments and Technologies},
-  pages={253-266},
+  title={D-Watch: Embracing ``Bad" Multipaths for Device-Free Localization With COTS RFID Devices},
+  author={Wang, Ju and others},
+  booktitle={CoNEXT},
   year={2016},
 }
 
 @inproceedings{RFind,
   title={Minding the Billions: Ultra-wideband Localization for Deployed RFID Tags},
-  author={Yunfei Ma, Nicholas Selby, Fadel Adib},
-  booktitle={Proc. ACM MobiCom},
-  pages={161-172},
+  author={Ma, Yunfei and others},
+  booktitle={MobiCom},
   year={2017},
 }
 
 @inproceedings{wang2016lifs,
   title={LiFS: Low Human-Effort, Device-Free Localization with Fine-Grained Subcarrier Information},
-  author={Wang, Ju and Jiang, Hongbo and Xiong, Jie and Jamieson, Kyle and Chen, Xiaojiang and Fang, Dingyi and Xie, Binbin},
-  booktitle={Proc. ACM MobiCom},
-  pages={243--256},
+  author={Wang, Ju and others},
+  booktitle={MobiCom},
   year={2016}
 }
 
-@article{PinIt,
+@inproceedings{PinIt,
   title={Dude, where's my card?:RFID positioning that works with multipath and non-line of sight},
-  author={Wang, Jue and Katabi, Dina},
-  journal={ACM SIGCOMM Computer Communication Review},
-  volume={43},
-  number={4},
-  pages={51-62},
+  author={Wang, Jue and others},
+  booktitle={SIGCOMM},
   year={2013},
 }
 
 @inproceedings{Arraytrack,
   title={ArrayTrack: a fine-grained indoor location system},
   author={Xiong, Jie and Jamieson, Kyle},
-  booktitle={Proc. USENIX NSDI},
-  pages={71--84},
+  booktitle={NSDI},
   year={2013}
 }
 
 @inproceedings{Spotfi,
   title={Spotfi: Decimeter level localization using wifi},
-  author={Kotaru, Manikanta and Joshi, Kiran and Bharadia, Dinesh and Katti, Sachin},
-  booktitle={Proc. ACM SIGCOMM},
-  pages={269--282},
+  author={Kotaru, Manikanta and others},
+  booktitle={SIGCOMM},
   year={2015}
 }
 
 @inproceedings{Tagoram,
   title={Tagoram: real-time tracking of mobile RFID tags to high precision using COTS devices},
-  author={Yang, Lei and Chen, Yekui and Li, Xiang Yang and Xiao, Chaowei and Li, Mo and Liu, Yunhao},
-  booktitle={International Conference on Mobile Computing and NETWORKING},
-  pages={237-248},
+  author={Yang, Lei and others},
+  booktitle={MobiCom},
   year={2014},
 }
 
 @inproceedings{Tagscan,
   title={TagScan: Simultaneous Target Imaging and Material Identification with Commodity RFID Devices},
-  author={Wang, Ju and Xiong, Jie and Chen, Xiaojiang and Jiang, Hongbo and Balan, Rajesh Krishna and Fang, Dingyi},
-  booktitle={Proc. ACM International Conference on Mobile Computing and Networking. (MobiCom)},
+  author={Wang, Ju and others},
+  booktitle={MobiCom},
   year={2017},
 }
 
 @inproceedings{LiquID,
   title={LiquID: A Wireless Liquid IDentifier },
-  author={Ashutosh Dhekne, Mahanth Gowda, Yixuan Zhao, Haitham Hassanieh, Romit Roy Choudhury},
-  booktitle={Pro. ACM international conference on Mobile systems, applications, and services. {MobiSys}},
+  author={Dhekne, Ashutosh and others},
+  booktitle={MobiSys},
   year={2018},
 }
 
 @inproceedings{Tagbeat,
   title={Making sense of mechanical vibration period with sub-millisecond accuracy using backscatter signals},
-  author={Yang, Lei and Li, Yao and Lin, Qiongzheng and Li, Xiang Yang and Liu, Yunhao},
-  booktitle={International Conference on Mobile Computing and NETWORKING},
-  pages={16-28},
+  author={Yang, Lei and others},
+  booktitle={MobiCom},
   year={2016},
 }
 
 @inproceedings{CAT,
   title={CAT: high-precision acoustic motion tracking},
-  author={Mao, Wenguang and He, Jian and Qiu, Lili},
-  booktitle={International Conference on Mobile Computing and NETWORKING},
-  pages={69-81},
+  author={Mao, Wenguang and others},
+  booktitle={MobiCom},
   year={2016},
 }
 
 @inproceedings{BeepBeep,
-  title={BeepBeep:a high accuracy acoustic ranging system using COTS mobile devices},
-  author={Peng, Chunyi and Shen, Guobin and Zhang, Yongguang and Li, Yanlin and Tan, Kun},
-  booktitle={International Conference on Embedded Networked Sensor Systems, SENSYS 2007, Sydney, Nsw, Australia, November},
-  pages={1-14},
+  title={BeepBeep: a high accuracy acoustic ranging system using COTS mobile devices},
+  author={Peng, Chunyi and others},
+  booktitle={SenSys},
   year={2007},
 }
 
-@inproceedings{STRATA,
+
+@inproceedings{Strata,
   title={Strata: Fine-Grained Acoustic-based Device-Free Tracking},
-  author={Mao, Wenguang and Mao, Wenguang and Mao, Wenguang and Mao, Wenguang and Mao, Wenguang},
-  booktitle={International Conference on Mobile Systems, Applications, and Services},
-  pages={15-28},
+  author={Mao, Wenguang and others},
+  booktitle={MobiSys},
   year={2017},
 }
 
 
 @inproceedings{LLAP,
   title={Device-free gesture tracking using acoustic signals},
-  author={Wang, Wei and Liu, Alex X and Sun, Ke},
-  booktitle={International Conference on Mobile Computing and NETWORKING},
-  pages={82-94},
+  author={Wang, Wei and others},
+  booktitle={MobiCom},
   year={2016},
 }
 
 @inproceedings{Zhu2015Reusing,
   title={Reusing 60GHz Radios for Mobile Radar Imaging},
-  author={Zhu, Yanzi and Zhu, Yibo and Zhao, Ben Y and Zheng, Haitao},
-  booktitle={International Conference on Mobile Computing and NETWORKING},
-  pages={103-116},
+  author={Zhu, Yanzi and others},
+  booktitle={MobiCom},
   year={2015},
 }
 
 @article{Adib2017Capturing,
   title={Capturing the human figure through a wall},
-  author={Adib, Fadel and Hsu, Chen Yu and Mao, Hongzi and Katabi, Dina and Durand, Fr},
-  journal={Acm Transactions on Graphics},
-  volume={34},
-  number={6},
-  pages={1-13},
+  author={Adib, Fadel and others},
+  journal={ACM Transactions on Graphics},
   year={2017},
 }
 
 @InProceedings{Zhao_2018_CVPR,
-author = {Zhao, Mingmin and Li, Tianhong and Abu Alsheikh, Mohammad and Tian, Yonglong and Zhao, Hang and Torralba, Antonio and Katabi, Dina},
+author = {Zhao, Mingmin and others},
 title = {Through-Wall Human Pose Estimation Using Radio Signals},
-booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
+booktitle = {CVPR},
 year = {2018}
 }
 
 @inproceedings{zhao2018rf,
   title={RF-based 3D skeletons},
-  author={Zhao, Mingmin and Tian, Yonglong and Zhao, Hang and Alsheikh, Mohammad Abu and Li, Tianhong and Hristov, Rumen and Kabelac, Zachary and Katabi, Dina and Torralba, Antonio},
-  booktitle={Proceedings of the 2018 Conference of the ACM Special Interest Group on Data Communication},
-  pages={267--281},
+  author={Zhao, Mingmin and others},
+  booktitle={SIGCOMM},
   year={2018},
-  organization={ACM}
 }
 
 @inproceedings{CrossSense,
   title={CrossSense: Towards Cross-Site and Large-Scale WiFi Sensing},
-  author={Jie Zhang£¬Zhanyong Tang£¬Meng Li£¬Dingyi Fang£¬Petteri Nurmi£¬Zheng Wang },
-  booktitle={International Conference on Mobile Computing and NETWORKING},
-  pages={69-81},
+  author={Zhang, Jie  and others},
+  booktitle={MobiCom},
   year={2018},
 }
+Lion Precision.
+http://www.lionprecision.com/
 
-@article{mao2018aim,
+@inproceedings{mao2018aim,
   title={AIM: Acoustic Imaging on a Mobile},
-  author={Mao, Wenguang and Wang, Mei and Qiu, Lili},
+  author={Mao, Wenguang and others},
+  booktitle={MobiSys},
   year={2018}
 }
 	
 @inproceedings{Wang2015Understanding,
   title={Understanding and Modeling of WiFi Signal Based Human Activity Recognition},
-  author={Wang, Wei and Liu, Alex X. and Shahzad, Muhammad and Ling, Kang and Lu, Sanglu},
-  booktitle={International Conference on Mobile Computing and NETWORKING},
-  pages={65-76},
+  author={Wang, Wei and others},
+  booktitle={MobiCom},
   year={2015},
 }
 
 @inproceedings{Forster2011Incremental,
   title={Incremental kNN Classifier Exploiting Correct-Error Teacher for Activity Recognition},
-  author={Forster, Kilian and Monteleone, Samuel and Calatroni, Alberto and Roggen, Daniel and Troster, Gerhard},
-  booktitle={International Conference on Machine Learning and Applications},
-  pages={445-450},
+  author={Forster, Kilian and others},
+  booktitle={ICMLA},
   year={2011},
 }
 
 @inproceedings{Wang2014We,
   title={We Can Hear You with Wi-Fi!},
-  author={Wang, Guanhua and Zou, Yongpan and Zhou, Zimu and Wu, Kaishun and Ni, Lionel M.},
-  booktitle={International Conference on Mobile Computing and Networking},
-  pages={593-604},
+  author={Wang, Guanhua and others},
+  booktitle={MobiCom},
   year={2014},
 }
 
 @inproceedings{Smart-homes,
 title={Smart Homes that Monitor Breathing and Heart Rate},
-author={Adib, Fadel and Mao, Hongzi and Kabelac, Zachary and Katabi, Dina and Miller, Robert C.},
-booktitle={Proc. {ACM} ({CHI})},
-pages={837-846},
-year={2015}.
+author={Adib, Fadel and others},
+booktitle={CHI},
+year={2015},
 }
+
+@inproceedings{Pinpoint,
+  title={Pinpoint: Localizing interfering radios},
+  author={K, Joshi and others},
+  booktitle={NSDI},
+  year={2013},
+}
+
 
 @inproceedings{wang2016human,
   title={Human respiration detection with commodity wifi devices: do user location and body orientation matter?},
-  author={Wang, Hao and Zhang, Daqing and Ma, Junyi and Wang, Yasha and Wang, Yuxiang and Wu, Dan and Gu, Tao and Xie, Bing},
-  booktitle={Proceedings of the 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing},
-  pages={25--36},
+  author={Wang, Hao and others},
+  booktitle={UbiComp},
   year={2016},
-  organization={ACM}
 }
 
 @article{Suzuki1996,
-  title={[The discovery of X-rays and their introduction to Japan at the end of the 19th century]},
-  author={Suzuki, S},
-  journal={Nihon Igaku Hoshasen Gakkai Zasshi},
-  volume={56},
-  number={5},
-  pages={241-250},
-  year={1996},
+  title={The history, development and impact of computed imaging in neurological diagnosis and neurosurgery: CT, MRI, and DTI},
+  author={Filler, Aaron G},
+  journal={Internet Journal of Neurosurgery},
+  year={2010}
 }
+
 
 @article{Cruz2015Quantification,
   title={Quantification of Cinematography Semiotics for Video-based Facial Emotion Recognition in the EmotiW 2015 Grand Challenge},
   author={Cruz, Albert C.},
-  pages={511-518},
   year={2015},
 }
 
 @article{De2013B,
   title={B-scan and "en-face" spectral-domain optical coherence tomography imaging for the diagnosis and followup of acute retinal pigment epitheliitis.},
-  author={De, Bats F and Wolff, B and Mauget-Fa?sse, M and Scemama, C and Kodjikian, L},
-  journal={Case Reports in Medicine,2013,(2013-2-17)},
-  volume={2013},
-  number={2},
-  pages={260237},
+  author={De, Bats F and others},
+  journal={Case Reports in Medicine},
   year={2013},
+}
+
+@inproceedings{WiSee,
+  title={Whole-Home Gesture Recognition Using Wireless Signals},
+  author={Pu, Qifan and others},
+  booktitle={MobiCom},
+  year={2013},
+}
+
+
+
+@inproceedings{Zhao2017Emotion,
+  title={Emotion recognition using wireless signals},
+  author={Zhao, Mingmin and others},
+  booktitle={MobiCom},
+  year={2017},
+}
+
+@article{wang2017wifall,
+  title={Wifall: Device-free fall detection by wireless networks},
+  author={Wang, Yuxi and others},
+  journal={IEEE Transactions on Mobile Computing},
+  year={2017},
+}
+
+@inproceedings{vasisht2016decimeter,
+  title={Decimeter-Level Localization with a Single WiFi Access Point.},
+  author={Vasisht, Deepak and others},
+  booktitle={NSDI},
+  year={2016}
+}
+
+@article{Au1988Sonar,
+  title={Sonar Discrimination of Metallic Plates by Dolphins and Humans},
+  author={Au, Whitlow W. L. and Martin, Douglas W.},
+  year={1988},
+}
+
+@inproceedings{Lu2018,
+  title = {Simultaneous Localization and Mapping with Power Network Electromagnetic Field},
+  author = {Lu, Chris Xiaoxuan and others},
+  booktitle={MobiCom},
+  year={2018},
 }

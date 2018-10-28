@@ -1,51 +1,45 @@
 \section{Wireless Sensing Applications}
-Wireless sensing has been demonstrated to be effective on a wide range of tasks from localization onto activity recognition and material
+Wireless sensing has been demonstrated to be effective on a wide range of applications from localization, activity recognition to material
 identification.
 
 
-\subsection{Localization} Target localization and tracking are two popular sensing applications. \WiFi and \RFID are the predominate schemes used for this task, due to the low-cost and wide-scale deployment of the schemes.
-Acoustic signals have also been employed for localization and tracking, thanks to its slow propagation velocity and robustness to
-environment changes.
+\subsection{Localization} Target localization and tracking are two important sensing applications. \WiFi and \RFID are the popular technologies used for this task, due to the low-cost and wide deployment of the hardware.
+Acoustic signals are also employed for high-accuracy tracking in a small range. % thanks to its slow propagation velocity and robustness to environment changes.
 
- Localization can be achieved by using wireless fingerprints or a predictive model. A fingerprint-based approach works
-by first collecting the wireless fingerprints of a set of carefully chosen locations. During deployment, it compares the measured wireless
-channel metric (e.g., \RSSI or \CSI) against the pre-collected fingerprints, and then uses the most-similar fingerprint to infer the
-location of the target object. Such an approach has a low deployment cost, but its accuracy is susceptible to the environmental change and
-indoor multipath.
+Localization can be achieved by using wireless fingerprints or predictive models. A fingerprint-based approach works
+by first collecting the wireless fingerprints~(e.g., \RSSI or \CSI) at chosen locations. During deployment, it compares the measured CSI/RSSI readings against the pre-collected fingerprints to infer the
+location of the target object. Such an approach is easy to be deployed but requires high human-labor cost and its accuracy is susceptible to the environmental changes such as furniture movement.
 
-As an alternative, predictive models learn the correlation between the wireless signal characteristics and the indoor locations. Such
+As an alternative, predictive models learn the correlation between the wireless signal characteristics and the  locations. These
 approaches can be categorized into two groups. The first is to use the arrival-of-angle (\AoA) or time-of-flight (\ToF) of the wireless
-signals for location estimation. The second is to exploit the signal energy attenuation for location estimation. Predictive models have the
-advantage of having a better generalization ability over the fingerprint counterparts, i.e., it can estimate arbitrary locations of the
-target environment.
+signals for location estimation. The second is to exploit the signal amplitude for propagation distance estimate. Predictive models avoid the fingerprint collection phase but still requires hardware calibration such as phase calibration among RF front ends~(for \AoA) and time synchronization between the transceiver pair~(for \ToF).  Besides, the accuracy of the \AoA based methods depends on the size of the antenna array at the receiver while the frequency bandwidth is the key determining factor for \ToF based methods. UWB with a wide frequency band is thus an ideal candidate for \ToF-based localization and tracking.     %have the advantage of  %a better generalization ability over the fingerprint counterparts, i.e., it can estimate arbitrary locations of the target environment.
 
-However, predictive models are not a panacea and often suffer from hardware imperfections (e.g., it is difficult to obtain an accurate
-\ToF) and multipath effects (which make it hard for obtaining good signal attenuation). They also have the difficulties for determining the
-target's initial position. Several countermeasures have been proposed to address these issues. These include (i) using pre-collected
-fingerprints~\cite{Wang2016D}, directly modeling the phase differences~\cite{LLAP},  information obtained at multiple signal
-frequencies~\cite{RFind, CAT, Strata}, or multiple tracking devices~\cite{BeepBeep} to improve the information gain; (ii) using multiple
-antennas~\cite{Arraytrack, Spotfi} to cancel the multipath effect or directly modeling the multipath profiles~\cite{PinIt}; and (iii)
-leveraging the virtual antenna array to obtain the initial position~\cite{Tagoram}.
+%However, predictive models are not a panacea and often suffer from hardware imperfections (e.g., it is difficult to obtain an accurate
+%\ToF) and multipath effects (which make it hard for obtaining good signal attenuation). They also have the difficulties for determining the
+%target's initial position. Several countermeasures have been proposed to address these issues. These include (i) using pre-collected
+%fingerprints~\cite{Wang2016D}, directly modeling the phase differences~\cite{LLAP},  information obtained at multiple signal
+%frequencies~\cite{RFind, CAT, Strata}, or multiple tracking devices~\cite{BeepBeep} to improve the information gain; (ii) using multiple
+%antennas~\cite{Arraytrack, Spotfi} to cancel the multipath effect or directly modeling the multipath profiles~\cite{PinIt}; and (iii)
+%leveraging the virtual antenna array to obtain the initial position~\cite{Tagoram}.
 
 
 
 
 
 \subsection{Activity and Behavior Recognition}
-Human activity and behavior recognition is another area where wireless sensing has demonstrated great potential.
+Human activity and behavior recognition is another area where wireless sensing has demonstrated a great potential.
 
-Some of the early work of the area use multiple transmitters and receivers to construct a 3D lattice of wireless links to identify if there
-is a human movement and if so what is the user's location. Efforts have been made to use a single device equipped with multiple antennas to
-build a practical solution. For examples, WiSee~\cite{WiSee} was able to send signals from outside a room to track human movements; and WiTrack
-shows that is possible to recognize hand gestures from signal perturbations. A more recent work illustrates the possibility for using
+Some of the early work in the area use multiple transmitters and receivers to construct a 3D lattice of wireless links to identify if there
+are human movement. The latest efforts have been made to use a single device equipped with multiple antennas to realize activity recognition. For examples, WiSee~\cite{WiSee} was able to differentiate 9 commonly seen hand gestures with the help of machine learning methods. %WiTrack shows that it is possible to recognize hand gestures from signal perturbations.
+A more recent work illustrates the possibility of using
 wireless signals for measuring human's breathing and heart rate~\cite{Smart-homes}. The idea is that the chest movement caused by
-breathing would alert the signal reflections, which in turn allows one to capture the breathing event and count the heart rate with enough
-accuracy. By precisely counting the heart beats, one can even predict a user's emotion~\cite{Zhao2017Emotion}.
+breathing would change the signal reflections, which in turn allows one to capture the breathing event and count the heart rate at high enough
+accuracies. By precisely counting the heart beats, one can even predict a user's emotion~\cite{Zhao2017Emotion}.
 
-Machine learning based classifiers have been widely used in activity recognition. The effectiveness of such schemes in general depends on
+Machine learning based classifiers have been widely used in activity recognition. The effectiveness of these methods in general depends on
 the quality of the training data and features for capturing the characteristics of the activity. As a result, some of the recent research
 efforts turn into seeking ways to automatically identify useful features~\cite{CrossSense} or reduce the human involvements (and thus the
- cost) for generating high-quality training data~\cite{zhao2018rf}.
+ labor cost) for generating high-quality training data~\cite{zhao2018rf}.
 
 
 
@@ -53,41 +47,33 @@ efforts turn into seeking ways to automatically identify useful features~\cite{C
 
 \subsection{Target Imaging and 3D Reconstruction}
 
-Target imaging is another area that has attracted extensive attentions. Traditional imaging systems like Radar, X-rays, CT employ dedicated
-hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Hence, some
-researchers attempt to use \RF signals to image a target' shape. Tagscan~\cite{Tagscan} leverages each propagation distance inside a target
-represents one piece of target width information at one angle, by stitching together the width information at many angles can obtain the
+Target imaging is another area that has attracted extensive attentions. Traditional imaging systems like Radar, X-rays and CT employ dedicated
+hardware with high frequency, large bandwidth and antenna arrays, which are extremely expensive and usually large in size. Hence, researchers attempt to employ \RF signals generated from cheap commodity device to image a target's shape. Tagscan~\cite{Tagscan} {\color{red}cite another paper from UCSB} leverages the phase and amplitude change at each angle to obtain the target width information and stitches together the width information at many angles to obtain the
 horizontal cut image of the target. However, this approach needs a robot with antenna moves around the target, which extremely limits the
-system's practicability. To deal with this issue, RF-Capture~\cite{Adib2017Capturing} utilizes \FMCW signal to reconstruct the skeleton of
-a human target behind a wall by extracting the signal reflections from human body parts. However, this system exhibits some limitations.
-For example, it needs target starts by walking towards the device, then it only adopts a simple model for the human body for segmentation
-and skeletal stitching, which only captures a very coarse-grained target image. To further deal with these problems,
-RF-Pose3D~\cite{zhao2018rf} infers 3D human skeletons by incorporating RF~(\FMCW) signal and visual stream. It first leverages deep CNN to infer
-the person's 3D skeleton, and then uses the visual stream to label different target skeleton. Finally, this system can track each key point
-on the human body with a cm-level accuracy.
+system's practicability. To deal with this issue, RF-Capture~\cite{Adib2017Capturing} utilizes \FMCW signals to reconstruct the skeleton of
+a human target behind a wall by extracting the signal reflections from human body parts. However, this system still has some limitations. For example, it requires the target to start walking towards the device and it adopts a simple model which only captures a coarse target image. To further deal with these problems,
+RF-Pose3D~\cite{zhao2018rf} infers 3D human skeleton by incorporating \FMCW signal and visual stream. It first leverages deep CNN to infer
+the person's 3D skeleton, and then uses the visual stream to label different target skeletons. RF-Pose3D can track each key point
+on the human body at a centimeter-level accuracy.
 
 
 \subsection{Object Material Identification}
-Material identification is another recent breakthrough for consumer-grade wireless sensing. This task is important for many daily
-applications such as detecting concealed weapons and determining food deterioration.
+Material identification is another exciting direction for wireless sensing. It can be adopted in
+applications such as detecting concealed weapons and expired milk. % deterioration.
 
-Existing material identification systems such as Radar, X-rays, CT, MRI and B-scan ultrasonography use special hardware with high
-frequency, large bandwidth and antenna arrays. They are expensive to purchase and operate. Some of the recent work utilize the low-cost
-wireless signals like \RFID to sense the target materials and achieve impressive results. TagScan~\cite{Tagscan} detects the change of the
-\RSSI and phase when the \RF signal penetrates through the target. When evaluating on 10 liquids, TagScan was able to successfully identify
-over 94\% of the test objects and tells the different between Coke and Pepsi. Such an approach offers a low-cost alternative, but due to
-the limitation of the technology, it is not expected to be used at security-critical scenarios like airport security check.
-
+Existing material identification systems such as Radar, X-rays, CT, MRI and B-scan ultrasonography employ extreme high
+frequency signals for sensing. They are expensive and need professionals to operate. Some of the recent work utilize the low-cost
+wireless signals like \RFID to sense the target material. TagScan~\cite{Tagscan} detects the changes of the
+\RSSI and phase when the \RF signal penetrates through the target. When evaluating on 10 liquids, TagScan is able to successfully identify
+the test objects at 94\% accuracy and differentiate between Coke and Pepsi.% Such an approach offers a low-cost alternative, but due to the limitation of the technology, it is not expected to be used at security-critical scenarios like airport security check.
 
 
-
-
-\subsection{Vibration Detection}   Vibration detection plays a vital role in many applications, such as malfunction detection in electronic instrument,
-monitoring the displacement in vehicle, etc. Traditional vibration sensing schemes require dedicated sensors, which are very expensive. And
+\subsection{Vibration Detection}   Vibration detection plays a vital role in many applications, such as malfunction detection in electronic instrument and
+monitoring the displacement in vehicle, etc. Traditional vibration sensing schemes~\cite{Lion} require dedicated sensors, which are very expensive. And
 most of them have a limit monitoring area.
 
-To avoid these drawbacks, TagBeat~\cite{Tagbeat} proposes to utilize commodity \RFID to achieve sub-millisecond vibration sensing. In order
-to magnify tiny vibration signal induced by micro-vibration this paper introduced a simple mathematical methodology to multiplies the
-vibration amplitude by a constant. Also, they proposed a compressive sensing model to reconstruct the vibration signal to overcome the
+To avoid these drawbacks, TagBeat~\cite{Tagbeat} proposes to utilize commodity \RFID to achieve sub-millimetre  vibration sensing. In order
+to magnify tiny vibration signal induced by micro-vibration, {\color{red} double check: this paper introduced a simple mathematical methodology to multiplies the
+vibration amplitude by a constant. } Also, they propose a compressive sensing model to reconstruct the vibration signal to overcome the
 challenge of detecting high-frequency vibration with a limited sampling rate.
 

@@ -1,38 +1,18 @@
 \subsection {Choices of Wireless Sensing Signals}
 
-\renewcommand\arraystretch{2}
-\begin{table*}\scriptsize
-%\centering
-\caption{Consumer-grade wireless signals used in prior sensing tasks.}
-\label{Tab1}
-\setlength{\tabcolsep}{7mm}
-\begin{tabular}{p{1cm}p{0.6cm}<{\raggedright}p{0.9cm}<{\raggedright}p{0.7cm}<{\raggedright}p{0.6cm}<{\raggedright}p{1.1cm}<{\raggedright}p{0.8cm}<{\raggedright}p{1.2cm}<{\raggedright}}
-\toprule
-%\diagbox[width=5em,trim=l]{Properties}{Signal} & Wi-Fi & RFID & UWB & Asoustic & LoRa & FMCW radar & Visible Light \\
-\textbf{Properties} & \textbf{WiFi} & \textbf{RFID} & \textbf{UWB} & \textbf{Asoustic} & \textbf{LoRa} & \textbf{FMCW radar} & \textbf{Visible Light} \\
-\midrule
-\rowcolor{Gray} \textbf{Communication Range} & 35m & 10m & 10-20m & 2-3m & 15km & 9m-120km & 1.4km\\
-\textbf{Frequency} & 2.4GHz/5GHz & 902.75-927.25MHz & 3.1-10.6GHz & 17-24KHz & 868MHz/903-927.5MHz & 24-24.25GHz & 380-790THz\\
-\rowcolor{Gray} \textbf{Bandwidth} & 20/40MHz & 24.5MHz & 1GHZ & -- & 125/250/500KHz & 250MHz & --\\
-\textbf{Metrics} & \CSI, \RSSI & Phase, Doppler, \RSSI & Phase, \RSSI& Phase, \RSSI & Frequency, Phase, \RSSI & Frequency, Phase, \RSSI & \RSSI\\
-\rowcolor{Gray} \textbf{Cost} & Low & Low & High & Low & Low & High & High\\
-%\textbf{Modulation} & OFDM & OOK & PPM & AM/FM/PM & CSS& FMCW & OOK/CSK/VPPM\\
-\bottomrule
-\end{tabular}
-%\caption{Different wireless signals with different properties.}%\lable{Tab1}
-\end{table*}
 
-As summarized in Table~\ref{Tab1}, a wide range of wireless signals have been employed in prior work for information sensing. These include
-\WiFi, \RFID, acoustic, long-range (\LoRa) signal, visible lights, frequency-modulated continuous-wave (\FMCW) radar and ultra-wideband (\UWB). Signals like
-WiFi, acoustic, and visible lights are readily available on commercial off-the-self devices (such as smartphones and smart light bulbs),
-while others like \UWB and \FMCW often require specialize hardware to operate.
+As summarized in Table~\ref{Tab1}, a large variety of wireless signals have been employed in prior work for information sensing. These include
+\WiFi, \RFID, acoustic, \LoRa, visible lights, 60GHz and ultra-wideband (\UWB). Signals like
+WiFi, acoustic, and visible lights are readily available at COTS devices such as smartphones and light bulbs,
+while others like \UWB and 60GHz often require dedicated hardware to operate.
 
 
 
-Which signal is best for a sensing task, is the \$64,000 question. The answer is, it depends. For examples, while \WiFi is almost
-everywhere, it is limited in the communication range (i.e., 35 meters) and consumes a significant amount of power; by contrast, \LoRa
-supports a longer range (i.e., 15 Kilometers) and needs significantly less power to operate, but it has a much lower bandwidth and is more
-sensitive to the environmental multipath. Different signals also operate at different frequencies and offer a variety of sensing metrics.
-Some of the signals like \FMCW radar can provide an accurate tracking capability but is more expensive to deploy. It is important to note
-that there is no ``one-size-fits-all" sensing medium, and the choice depends on the trade-off between the precision requirements, the
+Which signal is best for a sensing task, is the \$64,000 question. The answer is, it depends. For example, while \WiFi is ubiquitous indoors, it is limited in the communication range~(15-50m) and consumes a significant amount of power. In contrast, \LoRa
+supports a much longer range up to 15km and needs much less power to operate, but it has a much smaller bandwidth and is more
+sensitive to multipath and interference. %Different technologies also operate at different carrier frequencies and offer a variety of sensing metrics.
+On the other hand, acoustic signals can achieve a surprisingly high sensing accuracy at millimetre level~\cite{LLAP} due to the much smaller propagation speed in the air. However, the sensing range of acoustic signals is usually below 1m.
+%Some of the signals like \FMCW radar can provide an accurate tracking capability but is more expensive to deploy.
+It is thus important to note
+that there is no ``one-size-fits-all" sensing signal, and the choice depends on the trade-off between the precision requirements, the
 deployment environment, and the budget.
